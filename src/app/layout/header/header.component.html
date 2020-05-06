@@ -1,0 +1,68 @@
+<nav class="navbar navbar-expand-lg navbar-custom sticky sticky-dark"  style="background-color: transparent;box-shadow: none;background: transparent !important;">
+    <div class="container-fluid">
+        <!-- LOGO -->
+        <a class="navbar-brand logo text-uppercase" routerLink="/">
+            <img src="/assets/images/logo.png" style="width: 350px;">
+        </a>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="nav-button ml-auto">
+                    <button class="navbar-toggler" (click)="toggleMenu()" type="button" id="menu_button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="mdi mdi-menu"></i>
+                    </button>
+                    <span style="
+                    height: 27px;
+                    width: 25px;
+                    float: right;
+                    border-radius: 50%;
+                    display: inline-block;
+                    background-size: cover;
+                    margin-left: 10px;
+                    margin-top: 2px;
+                    background-image: url('/assets/images/en.png');
+                    "></span>
+                    <span style="
+                    height: 27px;
+                    width: 25px;
+                    float: right;
+                    border-radius: 50%;
+                    display: inline-block;
+                    background-size: cover;
+                    margin-top: 2px;
+                    background-image: url('/assets/images/tr.png');
+                    "></span>
+                    <button style="padding: 0px 10px 0px 5px;margin-right: 15px;" type="button" class="btn btn-custom navbar-btn btn-rounded waves-effect waves-light float-right"> <i class="mdi mdi-account-circle"></i> Üye Girişi</button>
+                </div>
+            </div>  
+            <div class="col-12">
+                <div class="collapse navbar-collapse" id="navbarCollapse" scrollSpy>
+                    <ul class="navbar-nav ml-auto" id="mySidenav">
+                        <li class="nav-item">
+                            <a data="id_home"  [ngx-scroll-to]="'#home'" class="nav-link">Anasayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data="id_features"  [ngx-scroll-to]="'#features'" class="nav-link">Hakkımızda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data="id_services"  [ngx-scroll-to]="'#services'" class="nav-link">Eğitim Programları</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data="id_about" [ngx-scroll-to]="'#about'" class="nav-link">Etkinlik Takvimi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data="id_pricing"  [ngx-scroll-to]="'#pricing'" class="nav-link">Orffdergi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data="id_blog"  [ngx-scroll-to]="'#blog'" class="nav-link">Üyelikler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data="id_contact" [ngx-scroll-to]="'#contact'" class="nav-link">İletişim</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</nav>

@@ -1,0 +1,11 @@
+bg-circle{
+    height: 1500px;
+    width: 93%;
+    background-color: #F08817;
+    border-radius: 48%;
+    display: inline-block;
+    position: absolute;
+    right: -48%;
+    top: -225px;
+    z-index: -1;
+}
