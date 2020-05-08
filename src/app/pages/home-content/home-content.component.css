@@ -1,0 +1,18 @@
+.bg-image{
+    width:1000px;position: absolute;right: 0;bottom: 0;
+}
+.sub-header{
+    font-size: 38px;
+    font-weight: 100;
+}
+.hr{
+    width: 664px;
+    margin-top: 21px;
+    margin-left: 0;
+    border: 2px solid #F0A017;
+    border-radius: 5px;
+}
+
+ul li{
+    color: #fff;
+}

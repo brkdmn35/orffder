@@ -13,6 +13,7 @@ import { ContactComponent } from '../contact/contact.component';
 import { TestiComponent } from '../testi/testi.component';
 import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 import { ParticlesModule } from 'angular-particle';
+import { HomeContentComponent } from '../home-content/home-content.component';
 
 import { Index1Component } from './index1/index1.component';
 import { Index2Component } from './index2/index2.component';
@@ -27,7 +28,7 @@ import { Index9Component } from './index9/index9.component';
 
 @NgModule({
   declarations: [Index1Component, ServicesComponent, AboutComponent, DescriptionComponent, PricingComponent,
-    GetstartComponent, BlogComponent, ContactComponent, TestiComponent,
+    GetstartComponent, BlogComponent, ContactComponent, TestiComponent,HomeContentComponent,
     Index2Component, Index3Component, Index4Component,ClientComponent,FeatureComponent, Index5Component, Index6Component, 
     Index7Component, Index8Component, Index9Component],
   imports: [

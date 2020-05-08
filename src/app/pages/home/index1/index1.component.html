@@ -26,7 +26,7 @@
     <span class="bg-circle" style="
     height: 1500px;
     width: 93%;
-    background-color: #F08817;
+    background-image: linear-gradient(to top, rgba(255, 135, 0, 0.50),rgba(255, 135, 0, 0.87), rgb(240, 157, 29));
     border-radius: 48%;
     display: inline-block;
     position: absolute;
@@ -36,27 +36,5 @@
     "></span>
 </section>
 
-<ng-template #content let-modal>
-    <div class="modal-header">
-        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </div>
-    <div class="modal-body">
-        <youtube-player [videoId]="id" (ready)="savePlayer($event)" height="450" width="780" (change)="onStateChange($event)"
-            [playerVars]="playerVars">
-        </youtube-player>
-    </div>
-</ng-template>
-
-<app-client></app-client>
-<app-feature></app-feature>
-<app-services></app-services>
-<app-description></app-description>
-<app-about></app-about>
-<app-pricing></app-pricing>
-<app-testi></app-testi>
-<app-getstart></app-getstart>
-<app-blog></app-blog>
-<app-contact></app-contact>
+<app-home-content></app-home-content>
 
