@@ -2,3 +2,23 @@ a
 {
     cursor: pointer;
 }
+
+
+ul li a{
+    color: black;
+    font-size: 20px;
+}
+
+.home-button{
+    background-color: #fff !important;
+    border-color: #fff !important;
+    color: rgb(240, 157, 29) !important;
+}
+.contact-button{
+    background-color: #F0A017 !important;
+    border-color: #F0A017 !important;
+    color: #fff !important;
+}
+.mobile-header{
+    text-align: center;
+}

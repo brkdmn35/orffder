@@ -14,6 +14,10 @@ import { TestiComponent } from '../testi/testi.component';
 import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 import { ParticlesModule } from 'angular-particle';
 import { HomeContentComponent } from '../home-content/home-content.component';
+import { FooterComponent } from '../footer/footer.component';
+import { EducationComponent } from '../education/education.component';
+import { EducationHomeComponent } from '../education-home/education-home.component';
+import { EducationContentComponent } from '../education-content/education-content.component';
 
 import { Index1Component } from './index1/index1.component';
 import { Index2Component } from './index2/index2.component';
@@ -24,18 +28,19 @@ import { Index6Component } from './index6/index6.component';
 import { Index7Component } from './index7/index7.component';
 import { Index8Component } from './index8/index8.component';
 import { Index9Component } from './index9/index9.component';
+import { from } from 'rxjs';
 
 
 @NgModule({
-  declarations: [Index1Component, ServicesComponent, AboutComponent, DescriptionComponent, PricingComponent,
-    GetstartComponent, BlogComponent, ContactComponent, TestiComponent,HomeContentComponent,
+  declarations: [Index1Component, ServicesComponent, AboutComponent, DescriptionComponent, PricingComponent,EducationContentComponent,EducationComponent,EducationHomeComponent,
+    GetstartComponent, BlogComponent, ContactComponent, TestiComponent,HomeContentComponent,FooterComponent,
     Index2Component, Index3Component, Index4Component,ClientComponent,FeatureComponent, Index5Component, Index6Component, 
     Index7Component, Index8Component, Index9Component],
   imports: [
     CommonModule,
     NgxYoutubePlayerModule.forRoot(),
     HomeRoutingModule,
-    ParticlesModule
+    ParticlesModule,
   ]
 })
 export class HomeModule { }

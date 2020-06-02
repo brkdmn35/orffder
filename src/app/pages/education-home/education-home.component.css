@@ -1,0 +1,43 @@
+.bg-image{
+    width:1000px;position: absolute;left: 0;bottom: 0;opacity: 0.4;z-index: -1;
+}
+
+@media (min-width:991px){
+    .home-content{
+        margin-top: 200px;
+    }
+}
+.hr{
+    width: 362px;
+    margin-top: 21px;
+    margin-left: 0;
+    border: 2px solid #F0A017;
+    border-radius: 5px;
+}
+
+.home-content{
+    z-index: 3;
+}
+.content-circle{
+    height: 650px;
+    width: 650px;
+    background-color: rgba(255, 135, 0, 0.4);
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: -100px;
+    bottom: -175px;
+}
+
+.education-button{
+    padding: 5px 30px 5px 30px;
+    border-radius: 20px;
+    float: right;
+    color: #fff;
+    font-size: 25px;
+    background-color: #F08817;
+}
+#education{
+    min-height: 1150px;
+    margin-top: -220px;
+}

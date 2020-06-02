@@ -10,9 +10,12 @@ import { Index6Component } from './index6/index6.component';
 import { Index7Component } from './index7/index7.component';
 import { Index8Component } from './index8/index8.component';
 import { Index9Component } from './index9/index9.component';
-
+import { ContactComponent } from '../contact/contact.component';
+import { EducationComponent } from '../education/education.component'
 const routes: Routes = [
   { path: '', component: Index1Component },
+  { path: 'contact', component: ContactComponent},
+  { path: 'education', component: EducationComponent},
   { path: 'index1', component: Index1Component },
   { path: 'index2', component: Index2Component },
   { path: 'index3', component: Index3Component },

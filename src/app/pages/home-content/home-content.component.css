@@ -1,5 +1,5 @@
 .bg-image{
-    width:1000px;position: absolute;right: 0;bottom: 0;
+    width:1000px;position: absolute;right: 0;bottom: 0;opacity: 0.4;
 }
 .sub-header{
     font-size: 38px;
@@ -26,4 +26,20 @@
 
 ul li{
     color: #fff;
+    font-size: 19px;
+}
+
+.ul-group{
+    z-index: 5;
+}
+
+.content-circle{
+    height: 200px;
+    width: 200px;
+    background-color: rgba(255, 135, 0, 1);
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    right: 320px;
+    bottom: 600px;
 }

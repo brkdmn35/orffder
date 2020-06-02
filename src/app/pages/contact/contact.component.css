@@ -1,0 +1,57 @@
+.contact-hr{
+    width: 125px;
+    float: left;
+    margin-top: 10px;
+    border: 1.5px solid #F0A017;
+    border-radius: 5px;
+}
+
+.message-hr{
+    width: 340px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 0;
+    border: 1.5px solid #F0A017;
+    border-radius: 5px;
+}
+
+.contact-card{
+    background-color: #F08817;
+    border-radius: 50px;
+}
+
+.contact-input{
+    width: 95%;
+    border-radius: 10px;
+    height: 34px;
+}
+
+.contact-button{
+    padding: 5px 30px 5px 30px;
+    border-radius: 20px;
+    color: #F08817;
+    font-size: 25px;
+    background-color: #5c5c5c;
+}
+
+.contact-button-container{
+    position: absolute;
+    right: -4%;
+    top: 88%;
+}
+
+@media (min-width:1000px){
+
+    #content{
+        padding-top: 100px;
+        padding-bottom: 9%;
+    }
+
+    .contact-padding{
+        padding-left: 28%;
+    }
+    .contact-card{
+        margin-left: 23%;
+
+    }
+}

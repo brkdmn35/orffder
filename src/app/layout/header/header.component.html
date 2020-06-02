@@ -2,14 +2,15 @@
     <div class="container-fluid">
         <!-- LOGO -->
         <a class="navbar-brand logo text-uppercase" routerLink="/">
-            <img src="/assets/images/logo.png" style="width: 350px;">
+            <img class="d-none d-lg-block d-xl-block" id="header-logo" src="/assets/images/logo.png" >
         </a>
 
-        <div class="row">
+        <div class="row mr-lg-5" id="header">
             <div class="col-12">
                 <div class="nav-button ml-auto">
-                    <button class="navbar-toggler" (click)="toggleMenu()" type="button" id="menu_button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="mdi mdi-menu"></i>
+                    <button class="navbar-toggler float-right" (click)="toggleMenu()" 
+                    type="button" id="menu_button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="mdi mdi-menu" style="color: black;"></i>
                     </button>
                     <span style="
                     height: 27px;
@@ -32,37 +33,72 @@
                     margin-top: 2px;
                     background-image: url('/assets/images/tr.png');
                     "></span>
-                    <button style="padding: 0px 10px 0px 5px;margin-right: 15px;" type="button" class="btn btn-custom navbar-btn btn-rounded waves-effect waves-light float-right"> <i class="mdi mdi-account-circle"></i> Üye Girişi</button>
+                    <button style="padding: 0px 10px 0px 5px;margin-right: 15px;font-weight: 500;" type="button" [class]="(currentUrl == '' || currentUrl == '/') ? 'btn btn-custom navbar-btn btn-rounded waves-effect waves-light float-right home-button' : 'btn btn-custom navbar-btn btn-rounded waves-effect waves-light float-right contact-button'"> <i style="color: #000000;" class="mdi mdi-account-circle"></i> Üye Girişi</button>
                 </div>
             </div>  
             <div class="col-12">
                 <div class="collapse navbar-collapse" id="navbarCollapse" scrollSpy>
                     <ul class="navbar-nav ml-auto" id="mySidenav">
                         <li class="nav-item">
-                            <a data="id_home"  [ngx-scroll-to]="'#home'" class="nav-link">Anasayfa</a>
+                            <a data="id_home" (click)="toggleMenu()" [ngx-scroll-to]="'#header'" routerLink="/" class="nav-link">Anasayfa</a>
                         </li>
                         <li class="nav-item">
-                            <a data="id_features"  [ngx-scroll-to]="'#features'" class="nav-link">Hakkımızda</a>
+                            <a data="id_features" (click)="toggleMenu()" [ngx-scroll-to]="'#features'" class="nav-link">Hakkımızda</a>
                         </li>
                         <li class="nav-item">
-                            <a data="id_services"  [ngx-scroll-to]="'#services'" class="nav-link">Eğitim Programları</a>
+                            <a data="id_education" (click)="toggleMenu()" [ngx-scroll-to]="'#education'" routerLink="/education" class="nav-link">Eğitim Programları</a>
                         </li>
                         <li class="nav-item">
-                            <a data="id_about" [ngx-scroll-to]="'#about'" class="nav-link">Etkinlik Takvimi</a>
+                            <a data="id_about"(click)="toggleMenu()" [ngx-scroll-to]="'#about'" class="nav-link">Etkinlik Takvimi</a>
                         </li>
                         <li class="nav-item">
-                            <a data="id_pricing"  [ngx-scroll-to]="'#pricing'" class="nav-link">Orffdergi</a>
+                            <a data="id_pricing" (click)="toggleMenu()" [ngx-scroll-to]="'#pricing'" class="nav-link">Orffdergi</a>
                         </li>
                         <li class="nav-item">
-                            <a data="id_blog"  [ngx-scroll-to]="'#blog'" class="nav-link">Üyelikler</a>
+                            <a data="id_blog" (click)="toggleMenu()" [ngx-scroll-to]="'#blog'" class="nav-link">Üyelikler</a>
                         </li>
                         <li class="nav-item">
-                            <a data="id_contact" [ngx-scroll-to]="'#contact'" class="nav-link">İletişim</a>
+                            <a data="id_contact" (click)="toggleMenu()" [ngx-scroll-to]="'#contact'" routerLink="/contact" class="nav-link">İletişim</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        
+    </div>
+    <div class="row m-0 w-100" 
+    style="background-color: rgb(240, 157, 29);
+    position: absolute;
+    top: 50px;">
+        <div class="col-12 p-0">
+            <div class="row d-lg-none d-xl-none">
+                <div class="col-12 ">
+                    <div class="collapse navbar-collapse" id="navbarCollapse2" scrollSpy>
+                        <ul class="navbar-nav ml-auto mobile-header" id="mySidenav">
+                            <li class="nav-item">
+                                <a data="id_home"  [ngx-scroll-to]="'#header'" routerLink="/" class="nav-link">Anasayfa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data="id_features"  [ngx-scroll-to]="'#features'" class="nav-link">Hakkımızda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data="id_services"  [ngx-scroll-to]="'#services'" class="nav-link">Eğitim Programları</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data="id_about" [ngx-scroll-to]="'#about'" class="nav-link">Etkinlik Takvimi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data="id_pricing"  [ngx-scroll-to]="'#pricing'" class="nav-link">Orffdergi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data="id_blog"  [ngx-scroll-to]="'#blog'" class="nav-link">Üyelikler</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data="id_contact" [ngx-scroll-to]="'#contact'" routerLink="/contact" class="nav-link">İletişim</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </nav>
