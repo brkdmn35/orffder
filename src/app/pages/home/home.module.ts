@@ -18,6 +18,10 @@ import { FooterComponent } from '../footer/footer.component';
 import { EducationComponent } from '../education/education.component';
 import { EducationHomeComponent } from '../education-home/education-home.component';
 import { EducationContentComponent } from '../education-content/education-content.component';
+import { CalendarComponent } from '../calendar/calendar.component';
+import { PaymentHeaderComponent } from '../payment-header/payment-header.component';
+import { PaymentComponent} from '../payment/payment.component'
+import { FormsModule } from '@angular/forms';
 
 import { Index1Component } from './index1/index1.component';
 import { Index2Component } from './index2/index2.component';
@@ -33,11 +37,12 @@ import { from } from 'rxjs';
 
 @NgModule({
   declarations: [Index1Component, ServicesComponent, AboutComponent, DescriptionComponent, PricingComponent,EducationContentComponent,EducationComponent,EducationHomeComponent,
-    GetstartComponent, BlogComponent, ContactComponent, TestiComponent,HomeContentComponent,FooterComponent,
-    Index2Component, Index3Component, Index4Component,ClientComponent,FeatureComponent, Index5Component, Index6Component, 
+    GetstartComponent, BlogComponent, ContactComponent, TestiComponent,HomeContentComponent,FooterComponent,CalendarComponent, PaymentHeaderComponent,
+    Index2Component, Index3Component, Index4Component,ClientComponent,FeatureComponent, Index5Component, Index6Component, PaymentComponent,
     Index7Component, Index8Component, Index9Component],
   imports: [
     CommonModule,
+    FormsModule,
     NgxYoutubePlayerModule.forRoot(),
     HomeRoutingModule,
     ParticlesModule,

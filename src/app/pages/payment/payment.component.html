@@ -1,0 +1,290 @@
+<app-payment-header (changePage)="changePage($event)"></app-payment-header>
+
+<form #f="ngForm" (ngSubmit)="sendForm()" ngNativeValidate>
+  <div class="row title-row mt-5 mb-5">
+    <div class="col-lg-8">
+      <h2>ZİNCİR KURS</h2>
+    </div>
+    <div class="col-lg-4">
+      <div class="row">
+        <div class="col-7">
+          <h5 class="title-text">
+            Orffder’in üyelerine özel avantajlarından ve imkanlarından faydalanmak için 
+          </h5>
+        </div>
+        <div class="col-5">
+          <button class="btn payment-sign">ÜYE OL</button>
+        </div>
+      </div>
+    </div>
+    <hr class="hr w-100">
+    <div class="col-lg-6 mt-3">
+      <div class="row" *ngIf="selectedCard == 4">
+        <div class="col-10">
+          <h4 style="font-weight: 100;">
+            Uzun ve detaylı bir hazırlık ve başvuru süreci sonucunda Orffder, Carl Orff Vakfı´ndan ORFF®-Schulwerk- Elementer Müzik ve Hareket Eğitimi
+            alanında öğretmen eğitimi sertifika programı (alışılmış ifade ile seviye kursları) düzenleme lisansını almaya hak kazanmıştır. Bu bağlamda,
+            Türkiye´de ORFF®-Schulwerk Elementer Müzik ve Hareket Eğitim
+            alanında uluslararası geçerliliği olan öğretmen eğitimi vermeye yetkili tek kurum Orffder´dir. Bu sertifika programının tarihleri ve detaylı
+            tanıtım broşürü çok yakında burada paylaşılacaktır. 
+          </h4>
+          <h4 style="font-weight: 500; margin-top: 30px; margin-bottom: 30px;">
+            Sertifika programına katılım için aşağıdaki mail adresine katılım
+            yapacağınıza dair mesajınızı iletip başvuru sürecini başlatabilirsiniz.  Detaylı bilgiler başvuru sürecinde tarafınıza iletilecektir.
+          </h4>
+          <span class="email-container">uyelik@orffder.org</span>
+        </div>
+      </div>
+      <div class="row pl-4" *ngIf="selectedCard != 4">
+        <div class="col-12">
+          <h2>BAŞVURU FORMU</h2>
+          <hr class="hr">
+          <h5 class="title-text">
+            Formu doldurarak kursa başvurunuzu gerçekleştirebilirsiniz.
+          </h5>
+        </div>
+      </div>
+      <div class="row" *ngIf="selectedCard != 4">
+          <div class="col-lg-10 payment-card mt-4">
+            <div class="row mt-4 mb-2">
+                <div class="col-3">
+                    <h4 class="text-white mt-1 ml-4">İSİM SOYİSİM</h4>
+                </div>
+                <div class="col-9">
+                    <div class="row">
+                      <div class="col-1 pr-0">
+                        <span class="text-white"> : </span>
+                      </div>
+                      <div class="col-11 pl-0">
+                        <input [(ngModel)]="formModel.name" required class="payment-input" type="text" name="name" >
+                      </div>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="row py-2">
+                <div class="col-3">
+                    <h4 class="text-white mt-1 ml-4">TCKN</h4>
+                </div>
+                <div class="col-9">
+                      <div class="row">
+                      <div class="col-1 pr-0">
+                        <span class="text-white"> : </span>
+                      </div>
+                      <div class="col-11 pl-0">
+                        <input [(ngModel)]="formModel.identity" required class="payment-input" type="text" name="identity">
+                      </div>
+                    </div>
+                    
+                </div>
+            </div>
+  
+            <div class="row py-2">
+              <div class="col-3">
+                  <h4 class="text-white mt-1 ml-4">E-MAIL</h4>
+              </div>
+              <div class="col-9">
+                    <div class="row">
+                      <div class="col-1 pr-0">
+                        <span class="text-white"> : </span>
+                      </div>
+                      <div class="col-11 pl-0">
+                        <input  [(ngModel)]="formModel.eMail" required  class="payment-input" type="text" name="eMail">
+                      </div>
+                    </div>
+                  
+              </div>
+            </div>
+  
+            <div class="row py-2">
+              <div class="col-3">
+                  <h4 class="text-white mt-1 ml-4">TELEFON</h4>
+              </div>
+              <div class="col-9">
+                    <div class="row">
+                      <div class="col-1 pr-0">
+                        <span class="text-white"> : </span>
+                      </div>
+                      <div class="col-11 pl-0">
+                        <input  [(ngModel)]="formModel.telephone" required class="payment-input" type="text" name="telephone">
+                      </div>
+                    </div>
+                  
+              </div>
+            </div>
+  
+            <div class="row py-4">
+                <div class="col-3">
+                    <h4 class="text-white mt-1 ml-4">MESAJINIZ</h4>
+                </div>
+                <div class="col-9">
+                  <div class="row">
+                    <div class="col-1 pr-0">
+                      <span class="text-white"> : </span>
+                    </div>
+                    <div class="col-11 pl-0">
+                      <textarea [(ngModel)]="formModel.message" style="width: 95%; border-radius: 10px;" type="text" name="message" rows="4"> </textarea>
+                    </div>
+                  </div>
+                </div>
+            </div>
+  
+            <div class="row py-4 ml-2" *ngIf="selectedCard == 3">
+              <div class="col-12">
+                  <h5 class="text-white mt-1">Lütfen katılım yapacağınız kurs tipini seçin.
+                  </h5>
+              </div>
+              <div class="col-12 ml-3">
+                <input  [(ngModel)]="formModel.courseType" value="1" type="radio"  class="form-check-input" name="course1">
+                <label class="form-check-label check-input">ORFF-SCHULWEK DERS MODELLERİ</label>
+              </div>
+              <div class="col-12 ml-3">
+                <input  type="radio" [(ngModel)]="formModel.courseType" value="2" class="form-check-input" name="course2">
+                <label class="form-check-label check-input">DİSİPLİNLERARASI İLAVE KURSLAR </label>
+              </div>
+            </div>
+  
+            <div class="row py-4 ml-4" *ngIf="selectedCard == 5">
+              <div class="col-6">
+                <input [(ngModel)]="formModel.participantType" value="1" type="radio" class="form-check-input" name="participantType1">
+                <label class="form-check-label check-input">KATILIMCI</label>
+              </div>
+              <div class="col-6">
+                <input [(ngModel)]="formModel.participantType" value="2" type="radio" class="form-check-input" name="participantType2">
+                <label class="form-check-label check-input">PAYLAŞIMCI ÖĞRETMEN </label>
+              </div>
+              <div class="col-12 mt-3">
+                <div class="row">
+                  <div class="col-lg-7 pl-0">
+                    <h5 class="text-white mt-1">Kursumuza paylaşımcı öğretmen olarak
+                      başvuruyorsanız lütfen ders dosyanızı ekleyiniz.
+                    </h5>
+                  </div>
+                  <div class="col-lg-5">
+                    <div class="row">
+                      <div class="col-lg-4 pr-0">
+                        <label class="form-file-upload">
+                          <input #lessonInput
+                          type="file"
+                          accept="/*"
+                          (change)="addFile(lessonInput,'lessonFile')">
+                        </label>
+                      </div>
+                      <div class="col-lg-8 pl-0">
+                        <h5 class="mt-3" style="font-weight: 100;">
+                          <strong style="font-weight: bold;color: #fff;">DERS DOSYASI EKLE</strong>
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          <div class="row py-4 ml-2" *ngIf="selectedCard == 2">
+            <div class="col-12">
+                <h6 class="text-white mt-1">Bu kursa başvurunuzu gerçekleştirebilmeniz için Niyet Mektubu ve Özgeçmişinizi
+                  Word veya PDF formatında eklemeniz gerekmektedir.
+                </h6>
+            </div>
+            <div class="col-6">
+              <div class="row">
+                <div class="col-3 pr-0">
+                  <label class="form-file-upload">
+                    <input #letterInput
+                    type="file"
+                    accept="/*"
+                    (change)="addFile(letterInput,'letter')">
+                  </label>
+                </div>
+                <div class="col-9 pl-0">
+                  <h5 class="mt-3" style="font-weight: 100;">
+                    <strong style="font-weight: bold;color: #fff;">NİYET MEKTUBUNU EKLE</strong>
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="row">
+                <div class="col-3 pr-0">
+                  <label class="form-file-upload">
+                    <input #cvInput
+                    type="file"
+                    accept="/*"
+                    (change)="addFile(cvInput,'cv')">
+                  </label>
+                </div>
+                <div class="col-9 pl-0">
+                  <h5 class="mt-3" style="font-weight: 100;">
+                    <strong style="font-weight: bold;color: #fff;">ÖZGEÇMİŞ EKLE</strong>
+                  </h5>
+                </div>
+              </div>
+            </div>
+        </div>
+  
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 mt-3">
+      <div class="row pl-4">
+        <div class="col-12">
+          <h2>ÖDEME</h2>
+          <hr class="hr hr-2">
+          <h4 style="font-weight: 100;">
+            Aşağıda belirtilen banka hesabımıza ödemenizi gerçekleştirip, dekontunuzu ekledikten sonra başvurunuzu
+            tamamlayabilirsiniz.
+          </h4>
+  
+          <h3 class="mt-3" style="font-size: 21px;">KURSA KATILIM ÜCRETİ</h3>
+          <h4 class="theme-color" style="padding-right: 30%;">
+            Kurs ücretleri güncel kurs duyuruları ile beraber
+            paylaşılacaktır.
+          </h4>
+  
+          <h3 class="mt-3" style="font-size: 21px;">
+            HAVALE / EFT
+          </h3>
+          <h4 class="mt-3" style="font-weight: 100;">
+            Garanti Bankası Rumeli Caddesi Şubesi
+          </h4>
+  
+          <h4 class="mt-3" style="font-weight: 100;">
+            <strong style="font-weight: bold;">Hesap Adı :</strong> Anadolu Orff Schulwerk Derneği  
+          </h4>
+  
+          <h4 class="mt-3" style="font-weight: 100;">
+            <strong style="font-weight: bold;">IBAN :</strong> TR78 0006 2000 4060 0006 2943
+          </h4>
+  
+          <div class="row justify-content-between">
+            <div class="col-lg-6 mt-4">
+              <div class="row">
+                <div class="col-3 pr-0">
+                  <label class="custom-file-upload">
+                    <input #receiptInput
+                    type="file"
+                    accept="/*"
+                    (change)="addFile(receiptInput,'receipt')">
+                  </label>
+                </div>
+                <div class="col-9 pl-0">
+                  <h4 class="mt-3" style="font-weight: 100;">
+                    <strong style="font-weight: bold;">DEKONT'U EKLE</strong>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mt-4">
+              <button type="submit" class="btn send-button">GÖNDER</button>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+
+<app-footer></app-footer>

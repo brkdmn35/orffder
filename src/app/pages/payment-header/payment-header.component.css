@@ -1,0 +1,36 @@
+ul
+{
+    flex-direction: row;
+}
+
+@media (min-width: 992px)
+ {
+    .payment-col{
+        max-width: 20% !important;
+    }
+    .payment-row{
+        padding-bottom: 30px;
+        padding-top: 30px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+.payment-row{
+    background-color: #E8E8E8;
+}
+
+.payment-circle{
+    height: 25px;
+    width: 25px;
+    background-color: rgba(255, 135, 0, 1);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.header-text{
+    cursor: pointer;
+}
+
+.active{
+    color: #D98017;
+}

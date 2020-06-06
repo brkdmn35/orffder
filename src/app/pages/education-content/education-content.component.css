@@ -1,12 +1,27 @@
 .left-image{
-    width: 490px;
+    width: 400px;
     border-radius: 50%;
     border: 20px solid #fff;
-    position: absolute;
-    left: 210px;
-    top: -51px;
 }
 
+@media (min-width:1400px){
+    .left-image{
+        width: 490px !important;
+        left: 130px;
+        top: -51px;
+        position: absolute;
+    }
+}
+.education-button{
+    padding: 5px 20px 5px 20px;
+    border-radius: 50px;
+    float: right;
+    color: #535251;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: #F08817;
+    margin-top: 25px;
+}
 
 .hr{
     width: 207px;
@@ -16,6 +31,34 @@
     border-radius: 5px;
 }
 
+.hr3{
+    width: 86px !important;
+}
+.hr4{
+    width: 267px !important;
+}
+
+.content-list p{
+    font-size: 19px;
+    color: white;
+    font-weight: 500;
+}
+
+.content-list{
+    background-color: #F0A017;
+    border-radius: 50px;
+    padding: 30px;
+    max-width: 650px;
+}
+
 .theme-color{
     color: #F0A017;
+}
+
+.content{
+    padding-right: 8%;
+    padding-left: 8%;
+}
+.features-box{
+    padding-right: 5%;
 }

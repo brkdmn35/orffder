@@ -12,10 +12,15 @@ import { Index8Component } from './index8/index8.component';
 import { Index9Component } from './index9/index9.component';
 import { ContactComponent } from '../contact/contact.component';
 import { EducationComponent } from '../education/education.component'
+import { CalendarComponent } from '../calendar/calendar.component'
+import { PaymentComponent } from '../payment/payment.component'
+
 const routes: Routes = [
   { path: '', component: Index1Component },
   { path: 'contact', component: ContactComponent},
   { path: 'education', component: EducationComponent},
+  { path: 'calendar', component: CalendarComponent},
+  { path: 'payment', component: PaymentComponent},
   { path: 'index1', component: Index1Component },
   { path: 'index2', component: Index2Component },
   { path: 'index3', component: Index3Component },

@@ -1,0 +1,116 @@
+.hr{
+    width: 230px;
+    margin-top: 10px;
+    margin-left: 0;
+    border: 2px solid #D98017;
+    border-radius: 5px;
+}
+.hr2{
+    width: 95px !important;
+}
+
+.title-row{
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-bottom: 100px;
+}
+.title-text{
+    font-size: 16px;
+    font-weight: 100;
+}
+.payment-sign{
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    float: right;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 500;
+    background-color: #D98017;
+}
+
+.payment-card{
+    background-color: #D98017;
+    border-radius: 50px;
+}
+
+.payment-input{
+    width: 95%;
+    border-radius: 10px;
+    height: 34px;
+}
+
+.payment-button{
+    padding: 5px 30px 5px 30px;
+    border-radius: 20px;
+    color: #F08817;
+    font-size: 25px;
+    background-color: #5c5c5c;
+}
+
+.payment-button-container{
+    position: absolute;
+    right: -4%;
+    top: 88%;
+}
+
+.theme-color{
+    color: #D98017;
+}
+
+.custom-file-upload {
+    display:inline-block;
+    width:50px;
+    height:50px;
+    cursor: pointer;
+    border-radius: 15px;
+    background:
+      linear-gradient(#fff,#fff),
+      linear-gradient(#fff,#fff),
+      #D98017;
+    background-position:center;
+    background-size: 65% 3px,3px 65%;
+    background-repeat:no-repeat;
+}
+
+.form-file-upload {
+    display:inline-block;
+    width:45px;
+    height:45px;
+    cursor: pointer;
+    border-radius: 15px;
+    background:
+      linear-gradient(#fff,#fff),
+      linear-gradient(#fff,#fff),
+      #393838;
+    background-position:center;
+    background-size: 65% 3px,3px 65%;
+    background-repeat:no-repeat;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.send-button{
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px;
+    float: right;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #D98017;
+}
+
+.check-input{
+    color: #fff;
+    font-weight: 500;
+}
+
+.email-container{
+    padding: 10px 20px;
+    background: #D98017;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 500;
+}
