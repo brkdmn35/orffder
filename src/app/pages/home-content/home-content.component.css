@@ -43,3 +43,7 @@ ul li{
     right: 320px;
     bottom: 600px;
 }
+
+.features-item-list li:before{
+    background-color: #F08817;
+}

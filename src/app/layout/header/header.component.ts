@@ -60,12 +60,12 @@ export class HeaderComponent implements AfterViewInit, AfterViewChecked {
 
   clearMenu() {
       var color = 'black';
-      this.currentUrl == '/education' ? color= 'white' : '';
+      this.isBlack() ? color= 'white' : '';
       document.querySelector('a[data="id_home"]').setAttribute('style', 'color:'+color+'!important');
       document.querySelector('a[data="id_education"]').setAttribute('style', 'color:'+color+'!important');
-      document.querySelector('a[data="id_features"]').setAttribute('style', 'color:'+color+'!important');
-      document.querySelector('a[data="id_pricing"]').setAttribute('style', 'color:'+color+'!important');
       document.querySelector('a[data="id_about"]').setAttribute('style', 'color:'+color+'!important');
+      document.querySelector('a[data="id_pricing"]').setAttribute('style', 'color:'+color+'!important');
+      document.querySelector('a[data="id_calendar"]').setAttribute('style', 'color:'+color+'!important');
       document.querySelector('a[data="id_blog"]').setAttribute('style', 'color:'+color+'!important');
       document.querySelector('a[data="id_contact"]').setAttribute('style', 'color:'+color+'!important');
       if(this.router.url == "/index1" || this.router.url == "/" )
@@ -80,8 +80,14 @@ export class HeaderComponent implements AfterViewInit, AfterViewChecked {
       {
         document.querySelector('a[data="id_education"]').setAttribute('style', 'color:#ee6352 !important');  
       }
+      else if(this.router.url == "/about")
+      {
+        document.querySelector('a[data="id_about"]').setAttribute('style', 'color:#ee6352 !important');  
+      }
   }
-
+  isBlack(){
+    return this.currentUrl == '/education' || this.currentUrl == '/about';
+  }
   checkColor(){
     return true;
   }

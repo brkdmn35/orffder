@@ -14,6 +14,7 @@ import { ContactComponent } from '../contact/contact.component';
 import { EducationComponent } from '../education/education.component'
 import { CalendarComponent } from '../calendar/calendar.component'
 import { PaymentComponent } from '../payment/payment.component'
+import { AboutusComponent } from '../aboutus/aboutus.component';
 
 const routes: Routes = [
   { path: '', component: Index1Component },
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'education', component: EducationComponent},
   { path: 'calendar', component: CalendarComponent},
   { path: 'payment', component: PaymentComponent},
+  { path: 'about', component: AboutusComponent},
   { path: 'index1', component: Index1Component },
   { path: 'index2', component: Index2Component },
   { path: 'index3', component: Index3Component },

@@ -21,6 +21,10 @@ import { EducationContentComponent } from '../education-content/education-conten
 import { CalendarComponent } from '../calendar/calendar.component';
 import { PaymentHeaderComponent } from '../payment-header/payment-header.component';
 import { PaymentComponent} from '../payment/payment.component'
+import { AboutusComponent } from '../aboutus/aboutus.component';
+import { AboutusHomeComponent } from '../aboutus-home/aboutus-home.component';
+import { AboutusContentComponent } from '../aboutus-content/aboutus-content.component';
+
 import { FormsModule } from '@angular/forms';
 
 import { Index1Component } from './index1/index1.component';
@@ -38,6 +42,7 @@ import { from } from 'rxjs';
 @NgModule({
   declarations: [Index1Component, ServicesComponent, AboutComponent, DescriptionComponent, PricingComponent,EducationContentComponent,EducationComponent,EducationHomeComponent,
     GetstartComponent, BlogComponent, ContactComponent, TestiComponent,HomeContentComponent,FooterComponent,CalendarComponent, PaymentHeaderComponent,
+    AboutusComponent,AboutusHomeComponent,AboutusContentComponent,
     Index2Component, Index3Component, Index4Component,ClientComponent,FeatureComponent, Index5Component, Index6Component, PaymentComponent,
     Index7Component, Index8Component, Index9Component],
   imports: [
