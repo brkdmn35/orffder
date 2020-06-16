@@ -4,6 +4,16 @@
 .sub-header{
     font-size: 38px;
     font-weight: 100;
+    font-style: italic;
+    font-family: RalewayRegular;
+}
+.header{
+    font-family: RalewayBold;
+}
+
+.content{
+    font-family: RalewayRegular;
+    font-size: 16px;
 }
 @media (min-width:750px){
     .hr{
@@ -26,7 +36,7 @@
 
 ul li{
     color: #fff;
-    font-size: 19px;
+    font-size: 16px;
 }
 
 .ul-group{

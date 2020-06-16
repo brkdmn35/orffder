@@ -1,0 +1,79 @@
+#membership{
+    min-height: 1150px;
+    margin-top: -220px;
+}
+
+.bg-image{
+    width:970px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+    z-index: -5;
+}
+
+.overlay-fix{
+    opacity: 0.75;
+}
+
+.home-content{
+    z-index: 3;
+    margin-top: 200px;
+}
+
+.hr{
+    width: 197px;
+    margin-top: -4px;
+    margin-left: 0;
+    border: 2px solid #F0A017;
+    border-radius: 5px;
+}
+.hr2{
+    width: 356px !important;
+}
+.hr3{
+    width: 273px !important;
+}
+.maga-bold{
+    font-family: MagallanesBold;
+}
+
+.mont-regu{
+    font-family: MontserratRegular;
+}
+
+.theme-color{
+    color: #F0A017;
+}
+
+
+
+.membership-button{
+    font-family: KelsonSansBold;
+    padding: 8px 40px 8px 40px;
+    border-radius: 26px;
+    float: right;
+    color: #fff;
+    font-size: 21px;
+    background-color: #F08817;
+}
+
+@media (min-width:991px){
+    .membership-button{
+        bottom: 0;
+        position: absolute;
+    }
+    .div-left{
+        padding-right: 5%;
+    }
+    
+    .div-right{
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+}
+.fix-to-left{
+    position: absolute; bottom: 0; left: 20px;
+    font-size: 8px;
+    color: white;
+}

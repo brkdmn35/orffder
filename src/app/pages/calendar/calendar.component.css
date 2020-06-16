@@ -1,5 +1,10 @@
 .calendar-col{
-    max-width: 20%;
+    max-width: 18%;
+}
+
+.calendar-container{
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 .hr{
@@ -9,3 +14,22 @@
     border: 2px solid #F0A017;
     border-radius: 5px;
 }
+
+.block-between {
+    position: relative;
+    width: 20px;
+    height: 520px;
+    border-width: 3px 0 3px 0;
+    border-style: solid;
+    border-color: #F0A017;
+}
+
+.block-between::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 514px;
+    background: #F0A017;
+    left: 8px;
+}
+

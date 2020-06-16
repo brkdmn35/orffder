@@ -1,0 +1,59 @@
+@font-face {
+    font-family: MagallanesLight;
+    src: url("/assets/fonts/MagallanesLight.otf") format("truetype");
+}
+
+@font-face {
+    font-family: MontserratLight;
+    src: url("/assets/fonts/MontserratLight.otf") format("truetype");
+}
+
+@font-face {
+    font-family: KelsonSansBold;
+    src: url("/assets/fonts/KelsonSansBold.otf") format("truetype");
+}
+
+@font-face {
+    font-family: Nexa-XBold;
+    src: url("/assets/fonts/Nexa-XBold.otf") format("truetype");
+}
+@font-face {
+    font-family: MontserratRegular;
+    src: url("/assets/fonts/Montserrat-Regular.otf") format("truetype");
+}
+
+@font-face {
+    font-family: MontserratSemiBold;
+    src: url("/assets/fonts/MontserratSemiBold.otf") format("truetype");
+}
+
+@font-face {
+    font-family: RalewayBold;
+    src: url("/assets/fonts/RalewayBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: RalewayRegular;
+    src: url("/assets/fonts/RalewayRegular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: MagallanesBold;
+    src: url("/assets/fonts/MagallanesBold.otf") format("truetype");
+}
+
+.maga-bold{
+    font-family: MagallanesBold;
+}
+
+.mont-regu{
+    font-family: MontserratRegular;
+}
+
+.mont-semi{
+    font-family: MontserratSemiBold;
+
+}
+.theme-color{
+    color: #F0A017;
+}

@@ -1,11 +1,54 @@
-bg-circle{
+.bg-circle{
     height: 1500px;
-    width: 93%;
-    background-color: #F08817;
+    width: 1500px;
+    background-image: linear-gradient(to top, rgba(255, 135, 0, 0.50),rgba(255, 135, 0, 1), rgb(240, 157, 29));
     border-radius: 48%;
     display: inline-block;
     position: absolute;
-    right: -48%;
+    right: -740px;
     top: -225px;
     z-index: -1;
+}
+.circle-icon{
+    height: 144%;
+                width: 65px;
+                position: absolute;
+                display: inline-block;
+                color: #3D3E44;
+                margin-top: -40px;
+                border-left: 10px solid;
+                border-top: 10px solid;
+                border-bottom: 10px solid;
+                border-radius: 8px;
+                margin-left: -41px;
+}
+
+.content-container{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.left-card{
+    padding-top: 50px;
+}
+
+.left-title{
+    font-family: RalewayRegular;
+    font-weight: 100;
+    color: #4e5256;
+}
+
+@media (min-width:991px){
+    .left-card{
+        padding-top: 150px;
+        padding-right: 20%;
+
+    }
+}
+
+.signature{
+    position: absolute;
+    bottom: 40px;
+    width: 360px;
+    left: 5%;
 }

@@ -24,7 +24,9 @@ import { PaymentComponent} from '../payment/payment.component'
 import { AboutusComponent } from '../aboutus/aboutus.component';
 import { AboutusHomeComponent } from '../aboutus-home/aboutus-home.component';
 import { AboutusContentComponent } from '../aboutus-content/aboutus-content.component';
-
+import { MembershipComponent } from '../membership/membership.component';
+import { MembershipHomeComponent } from '../membership-home/membership-home.component';
+import { MembershipContentComponent } from '../membership-content/membership-content.component'
 import { FormsModule } from '@angular/forms';
 
 import { Index1Component } from './index1/index1.component';
@@ -36,13 +38,12 @@ import { Index6Component } from './index6/index6.component';
 import { Index7Component } from './index7/index7.component';
 import { Index8Component } from './index8/index8.component';
 import { Index9Component } from './index9/index9.component';
-import { from } from 'rxjs';
 
 
 @NgModule({
   declarations: [Index1Component, ServicesComponent, AboutComponent, DescriptionComponent, PricingComponent,EducationContentComponent,EducationComponent,EducationHomeComponent,
     GetstartComponent, BlogComponent, ContactComponent, TestiComponent,HomeContentComponent,FooterComponent,CalendarComponent, PaymentHeaderComponent,
-    AboutusComponent,AboutusHomeComponent,AboutusContentComponent,
+    AboutusComponent,AboutusHomeComponent,AboutusContentComponent,MembershipComponent,MembershipHomeComponent,MembershipContentComponent,
     Index2Component, Index3Component, Index4Component,ClientComponent,FeatureComponent, Index5Component, Index6Component, PaymentComponent,
     Index7Component, Index8Component, Index9Component],
   imports: [

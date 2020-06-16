@@ -23,6 +23,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/styles.css",
               "src/assets/css/pe-icon-7-stroke.css",
               "./node_modules/@mdi/font/css/materialdesignicons.min.css",
               "src/assets/css/waves.css",
