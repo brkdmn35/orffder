@@ -1,0 +1,62 @@
+#magazine{
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.magazine-button{
+    font-family: KelsonSansBold;
+    padding: 8px 40px 8px 40px;
+    border-radius: 26px;
+    color: #fff;
+    font-size: 21px;
+    position: absolute;
+    background-color: #F08817;
+    left: 340px;
+    top: 22px;
+}
+
+.magazine-button2{
+    font-family: KelsonSansBold;
+    padding: 8px 40px 8px 40px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 21px;
+    background-color: #F08817;
+}
+
+.hr{
+    width: 92px;
+    margin-top: 2px;
+    margin-left: 0;
+    border: 2px solid #F0A017;
+    border-radius: 5px;
+}
+
+.custom-file-upload {
+    display:inline-block;
+    width:50px;
+    height:50px;
+    cursor: pointer;
+    border-radius: 15px;
+    background:
+      linear-gradient(#fff,#fff),
+      linear-gradient(#fff,#fff),
+      #D98017;
+    background-position:center;
+    background-size: 65% 3px,3px 65%;
+    background-repeat:no-repeat;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.send-button{
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px;
+    float: right;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #D98017;
+}

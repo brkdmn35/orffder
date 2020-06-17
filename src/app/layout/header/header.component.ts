@@ -64,7 +64,7 @@ export class HeaderComponent implements AfterViewInit, AfterViewChecked {
       document.querySelector('a[data="id_home"]').setAttribute('style', 'color:'+color+'!important');
       document.querySelector('a[data="id_education"]').setAttribute('style', 'color:'+color+'!important');
       document.querySelector('a[data="id_about"]').setAttribute('style', 'color:'+color+'!important');
-      document.querySelector('a[data="id_pricing"]').setAttribute('style', 'color:'+color+'!important');
+      document.querySelector('a[data="id_magazine"]').setAttribute('style', 'color:'+color+'!important');
       document.querySelector('a[data="id_calendar"]').setAttribute('style', 'color:'+color+'!important');
       document.querySelector('a[data="id_membership"]').setAttribute('style', 'color:'+color+'!important');
       document.querySelector('a[data="id_contact"]').setAttribute('style', 'color:'+color+'!important');
@@ -84,13 +84,17 @@ export class HeaderComponent implements AfterViewInit, AfterViewChecked {
       {
         document.querySelector('a[data="id_about"]').setAttribute('style', 'color:#ee6352 !important');  
       }
-      else if(this.router.url == "/membership")
+      else if(this.router.url == "/membership" || this.router.url == "/sign")
       {
         document.querySelector('a[data="id_membership"]').setAttribute('style', 'color:#ee6352 !important');  
       }
       else if(this.router.url == "/calendar")
       {
         document.querySelector('a[data="id_calendar"]').setAttribute('style', 'color:#ee6352 !important');  
+      }
+      else if(this.router.url == "/magazine")
+      {
+        document.querySelector('a[data="id_magazine"]').setAttribute('style', 'color:#ee6352 !important');  
       }
   }
   isBlack(){

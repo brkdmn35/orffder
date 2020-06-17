@@ -1,7 +1,3 @@
-.calendar-col{
-    max-width: 18%;
-}
-
 .calendar-container{
     padding-right: 10%;
     padding-left: 10%;
@@ -17,7 +13,7 @@
 
 .block-between {
     position: relative;
-    width: 20px;
+    width: 14px;
     height: 520px;
     border-width: 3px 0 3px 0;
     border-style: solid;
@@ -30,6 +26,38 @@
     width: 3px;
     height: 514px;
     background: #F0A017;
-    left: 8px;
+    left: 6px;
 }
 
+.calendar-circle{
+    height: 15px;
+    width: 15px;
+    background-color: #F0A017;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.middle-row{
+    height: 125px;
+    background-color: #E8E8E8;
+}
+
+.calendar-button{
+    font-size: 21px;
+    padding: 4px 25px 4px 25px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #F08817;
+}
+
+@media (min-width:991px){
+    .calendar-col{
+        max-width: 18%;
+    }
+}
+
+@media (max-width:991px){
+    .block-between{
+        display: none;
+    }
+}

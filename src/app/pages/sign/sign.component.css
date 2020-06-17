@@ -1,0 +1,29 @@
+#sign{
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.hr{
+    margin-left: 0;
+    border: 2px solid #F0A017;
+    border-radius: 5px;
+}
+
+.input-container{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border: 1px solid;
+    border-bottom: 0;
+    border-color: #F0A017;
+}
+
+.container-right{
+    border-left: 0 !important;
+}
+
+.big-container{
+    padding-bottom: 75px !important;
+}
+.border-bottom{
+    border-bottom: 1px solid;
+}
