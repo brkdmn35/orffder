@@ -13,21 +13,18 @@
     }
 }
 .education-button{
-    padding: 5px 20px 5px 20px;
+    font-size: 21px;
+    padding: 4px 25px 4px 25px;
     border-radius: 50px;
-    float: right;
-    color: #535251;
-    font-size: 25px;
-    font-weight: 500;
+    color: #fff;
     background-color: #F08817;
-    margin-top: 25px;
 }
 
 .hr{
     width: 207px;
     margin-top: 10px;
     margin-left: 0;
-    border: 2px solid #807F7D;
+    border: 2px solid #F08817;
     border-radius: 5px;
 }
 
@@ -58,4 +55,20 @@
 }
 .features-box{
     padding-right: 5%;
+}
+
+.content-footer-container{
+    font-weight: 100;
+    font-size: 18px;
+    padding: 30px;
+    background: orange;
+    border-radius: 30px;
+    text-align: center;
+    padding-right: 75px;
+    padding-left: 75px;
+}
+
+.middle-row{
+    height: 125px;
+    background-color: #E8E8E8;
 }
