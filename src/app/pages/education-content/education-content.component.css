@@ -53,8 +53,14 @@
     padding-right: 8%;
     padding-left: 8%;
 }
-.features-box{
-    padding-right: 5%;
+
+@media (min-width:991px){
+    .features-box{
+        padding-right: 8%;
+    }  
+    .features-box-right{
+        padding-left: 8%;
+    }  
 }
 
 .content-footer-container{
