@@ -10,47 +10,309 @@
   <div class="col-lg-8">
     <div class="row">
       <div class="col-lg-6 input-container">
-        <h5 class="mont-regu">ADI SOYADI:</h5>
-      </div>
-      <div class="col-lg-6 input-container container-right">
-        <h5 class="mont-regu">ANA ADI:</h5>
-      </div>
-      <div class="col-lg-6 input-container">
-        <h5 class="mont-regu">TC KİMLİK NO:</h5>
-      </div>
-      <div class="col-lg-6 input-container container-right">
-        <h5 class="mont-regu">BABA ADI:</h5>
-      </div>
-      <div class="col-lg-6 input-container">
-        <h5 class="mont-regu">SOSYAL MEDYA HESABI:</h5>
-      </div>
-      <div class="col-lg-6 input-container container-right">
-        <h5 class="mont-regu">KAN GRUBU:</h5>
-      </div>
-      <div class="col-lg-6 input-container">
-        <h5 class="mont-regu">MESLEĞİ:</h5>
-      </div>
-      <div class="col-lg-6 input-container container-right">
-        <h5 class="mont-regu">GEÇERLİLİK TARİHİ:</h5>
-      </div>
-      <div class="col-lg-6 input-container big-container">
-        <h5 class="mont-regu">EV ADRESİ:</h5>
-      </div>
-      <div class="col-lg-6 input-container container-right  big-container">
-        <h5 class="mont-regu">İŞ ADRESİ:</h5>
-      </div>
-      <div class="col-lg-6 input-container big-container">
-        <h5 class="mont-regu">MEZUN OLDUĞU OKUL:</h5>
-      </div>
-      <div class="col-lg-6 input-container container-right  big-container">
-        <h5 class="mont-regu">ÖĞRENİM DURUMU:</h5>
-      </div>
-      <div class="col-lg-6 input-container big-container">
-        <div class="row m-0">
-          <div class="col-2 p-0">
-            <h5 class="mont-regu">NÜFUSA KAYITLI OLDUĞU</h5>
+        <div class="row">
+          <div class="col-auto">
+            <h5 class="mont-regu mt-1">ADI SOYADI:</h5>
+          </div>
+          <div class="col pl-0">
+            <input type="text" class="w-100" [(ngModel)]="formModel.name">
           </div>
         </div>
+      </div>
+      <div class="col-lg-6 input-container container-right">
+        <div class="row">
+          <div class="col-auto">
+            <h5 class="mont-regu mt-1">ANA ADI:</h5>
+          </div>
+          <div class="col pl-0">
+            <input type="text" class="w-100" [(ngModel)]="formModel.motherName">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 input-container">
+        <div class="row">
+          <div class="col-auto">
+            <h5 class="mont-regu mt-1">TC KİMLİK NO:</h5>
+          </div>
+          <div class="col pl-0">
+            <input type="text" class="w-100" [(ngModel)]="formModel.identityNumber">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 input-container container-right">
+        <div class="row">
+          <div class="col-auto">
+            <h5 class="mont-regu mt-1">BABA ADI:</h5>
+          </div>
+          <div class="col pl-0">
+            <input type="text" class="w-100" [(ngModel)]="formModel.fatherName">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 input-container">
+        <div class="row">
+          <div class="col-auto">
+            <h5 class="mont-regu mt-1">SOSYAL MEDYA HESABI:</h5>
+          </div>
+          <div class="col pl-0">
+            <input type="text" class="w-100" [(ngModel)]="formModel.socialAccount">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 input-container container-right">
+        <div class="row">
+          <div class="col-auto">
+            <h5 class="mont-regu mt-1">KAN GRUBU:</h5>
+          </div>
+          <div class="col pl-0">
+            <input type="text" class="w-100" [(ngModel)]="formModel.bloodGroup">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 input-container">
+        <div class="row">
+          <div class="col-auto">
+            <h5 class="mont-regu mt-1">CEP TEL NO:</h5>
+          </div>
+          <div class="col pl-0">
+            <input type="text" class="w-100" [(ngModel)]="formModel.telNo">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 input-container container-right">
+        <div class="row">
+          <div class="col-auto">
+            <h5 class="mont-regu mt-1">KİMLİK SERİ NO:</h5>
+          </div>
+          <div class="col pl-0">
+            <input type="text" class="w-100" [(ngModel)]="formModel.identitySerialNumber">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 input-container">
+        <div class="row">
+          <div class="col-auto">
+            <h5 class="mont-regu mt-1">MESLEĞİ:</h5>
+          </div>
+          <div class="col pl-0">
+            <input type="text" class="w-100" [(ngModel)]="formModel.job">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 input-container container-right">
+        <div class="row">
+          <div class="col-auto">
+            <h5 class="mont-regu mt-1">GEÇERLİLİK TARİHİ:</h5>
+          </div>
+          <div class="col pl-0">
+            <input type="text" class="w-100" [(ngModel)]="formModel.expireDate">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 input-container">
+        <div class="row">
+          <div class="col-auto">
+            <h5 class="mont-regu mt-1">EV ADRESİ:</h5>
+          </div>
+          <div class="col pl-0">
+            <textarea name="homeAddress" rows="4" class="w-100" [(ngModel)]="formModel.homeAddress"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 input-container container-right ">
+        <div class="row">
+          <div class="col-auto">
+            <h5 class="mont-regu mt-1">İŞ ADRESİ:</h5>
+          </div>
+          <div class="col pl-0">
+            <textarea name="jobAddress" rows="4" class="w-100" [(ngModel)]="formModel.jobAddress"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 input-container">
+        <div class="row">
+          <div class="col-auto">
+            <h5 class="mont-regu mt-1">MEZUN OLDUĞU OKUL:</h5>
+          </div>
+          <div class="col pl-0">
+            <input type="text" class="w-100" [(ngModel)]="formModel.graduationSchool">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 input-container container-right">
+        <div class="row">
+          <div class="col-auto">
+            <h5 class="mont-regu mt-1">ÖĞRENİM DURUMU:</h5>
+          </div>
+          <div class="col pl-0">
+            <input type="text" class="w-100" [(ngModel)]="formModel.education">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 input-container bottom-border p-0">
+        <div class="row m-0">
+          <div class="col-auto right-border pt-4 pb-4">
+            <h5 class="mont-regu mt-1" style="width:65px">NÜFUSA KAYITLI OLDUĞU</h5>
+          </div>
+          <div class="col right-border">
+            <div class="row">
+              <div class="col-12 p-0 bottom-border">
+                <h5 class="mont-regu text-center mt-2">İL</h5>
+              </div>
+              <div class="col-12" style="min-height:75px;">
+                <input type="text" class="w-100" style="height:100%" [(ngModel)]="formModel.city">
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="col-12 p-0 bottom-border">
+                <h5 class="mont-regu text-center mt-2">İLÇE</h5>
+              </div>
+              <div class="col-12" style="min-height:75px;">
+                <input type="text" class="w-100" style="height:100%" [(ngModel)]="formModel.district">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 input-container bottom-border p-0 container-right">
+        <div class="row m-0">
+          <div class="col right-border">
+            <div class="row">
+              <div class="col-12 p-0 bottom-border">
+                <h5 class="mont-regu text-center mt-2">MAH/KÖY</h5>
+              </div>
+              <div class="col-12" style="min-height:75px;">
+                <input type="text" class="w-100" style="height:100%" [(ngModel)]="formModel.village">
+              </div>
+            </div>
+          </div>
+          <div class="col right-border">
+            <div class="row">
+              <div class="col-12 p-0 bottom-border">
+                <h5 class="mont-regu text-center mt-2">CİLT NO</h5>
+              </div>
+              <div class="col-12" style="min-height:75px;">
+                <input type="text" class="w-100" style="height:100%" [(ngModel)]="formModel.volumeNo">
+              </div>
+            </div>
+          </div>
+          <div class="col right-border">
+            <div class="row">
+              <div class="col-12 p-0 bottom-border">
+                <h5 class="mont-regu text-center mt-2">AİLE SIRA NO</h5>
+              </div>
+              <div class="col-12" style="min-height:75px;">
+                <input type="text" class="w-100" style="height:100%" [(ngModel)]="formModel.familyNo">
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="col-12 p-0 bottom-border">
+                <h5 class="mont-regu text-center mt-2">SIRA NO</h5>
+              </div>
+              <div class="col-12" style="min-height:75px;">
+                <input type="text" class="w-100" style="height:100%" [(ngModel)]="formModel.itemNo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4 pl-lg-5 pt-3">
+    <div class="row">
+      <div class="col-auto pr-3">
+        <label class="custom-file-upload">
+          <input #profileInput
+          type="file"
+          accept="/*"
+          (change)="addFile(profileInput,'profile')">
+        </label>
+      </div>
+      <div class="col pl-0">
+        <h4 class="mt-3" style="font-weight: 100;">
+          <strong style="font-weight: bold;">FOTOĞRAF EKLE</strong>
+        </h4>
+      </div>
+
+      <div class="col-12">
+        <h4 style="font-weight: 100;font-size: 16px;" class="mt-4 mont-regu">
+          Anadolu Orff Schulwerk Derneği Başkanlığına,
+          dernek tüzüğünü ve disiplin kurulu yönetmeliğini okudum. Üyelik koşullarını taşımaktayım. Anadolu Orff Schulwerk Derneği’ne üye 
+          olmak ve tüzükte belirtilen amaçların gerçekleştirilmesine katkıda bulunmak
+          istiyorum. Tek sefer alınacak olan ‘’dernek üyeliğine giriş ücreti 30 TL’’ ve ‘’bir yıllık üyelik aidatı 60 TL yi’’ 
+          toplam 90 TL olarak vermeyi üstleniyorum. Verdiğim iletişim/adres bilgilerim değişirse bir ay içinde bildirmekle yükümlü 
+          olduğumu, aksi halde ilk iletişim adreslerime yapılan bildirimlerin tarafıma ulaşmış sayılacağını kabul ederim. Üyeliğimin
+           kabulünü talep eder bilginize arz ederim.
+        </h4>
+      </div>
+
+      <div class="col-12 ml-4 mt-4">
+        <input type="checkbox" class="form-check-input" id="validate" required>
+        <label class="form-check-label  theme-color maga-bold" for="validate"> ONAYLIYORUM</label>
+      </div>
+
+      <div class="col-12 fix-to-bottom">
+        <h4 style="font-weight: 100;font-size: 14px;" class="mt-4 mont-regu">
+          Tüzüğü görüntülemek için tıklayınız.
+        </h4>
+        <button class="btn sign-button" routerLink="/payment" >TÜZÜK</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-5 mt-lg-5">
+    <h3 class="maga-bold mt-4 mb-0">
+      ÖDEME
+    </h3>
+    <hr class="hr">
+    <h4 style="font-weight: 100;font-size: 16px;max-width: 500px;" class="mt-4 mont-regu">
+      Aşağıda belirtilen banka hesabımıza ödemenizi gerçekleştirip, dekontunuzu ekledikten sonra başvurunuzu
+      tamamlayabilirsiniz.
+    </h4>
+    <h4 style="font-weight: 100;font-size: 16px;max-width: 500px;" class="mt-4 mont-semi">
+      DÜZENLİ - ASIL ÜYELİK ÜCRETİ
+    </h4>
+    <h4 style="font-weight: 100;font-size: 16px;max-width: 500px;" class="mt-2 mont-regu">
+      <span class="theme-color">25,00 ₺</span> üyeliğe giriş + <span class="theme-color">60 ₺</span> yıllık üyelik <br>
+      <span class="theme-color">Toplam : 90 ₺</span>
+    </h4>
+
+    <h4 style="font-weight: 100;font-size: 16px;max-width: 500px;" class="mt-5 mont-semi">
+      HAVALE / EFT
+    </h4>
+    <h4 style="font-weight: 100;font-size: 16px;max-width: 500px;" class="mt-3 mont-regu">
+      Garanti Bankası Rumeli Caddesi Şubesi
+    </h4>
+
+    <h4 style="font-weight: 100;font-size: 16px;max-width: 500px;" class="mt-3 mont-semi">
+      Hesap Adı: <span class="mont-regu ml-2">Anadolu Orff Schulwerk Derneği </span>
+    </h4>
+    <h4 style="font-weight: 100;font-size: 16px;max-width: 500px;" class="mt-3 mont-semi">
+      IBAN: <span class="mont-regu ml-2">TR78 0006 2000 4060 0006 2943 </span>
+    </h4>
+  </div>
+  <div class="col-lg-8 mt-3">
+    <div class="row justify-content-between">
+      <div class="col-auto pr-3">
+        <label class="custom-file-upload">
+          <input #receiptInput
+          type="file"
+          accept="/*"
+          (change)="addFile(receiptInput,'receipt')">
+        </label>
+      </div>
+      <div class="col pl-0">
+        <h4 class="mt-3 maga-bold" style="font-weight: 100;">
+          <strong style="font-weight: bold;">DEKONT'U EKLE</strong>
+        </h4>
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn send-button kelso-sans">GÖNDER</button>
       </div>
     </div>
   </div>
