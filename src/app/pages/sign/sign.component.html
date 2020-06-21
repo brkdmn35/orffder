@@ -16,7 +16,7 @@
               <h5 class="mont-regu mt-1">ADI SOYADI:</h5>
             </div>
             <div class="col pl-0">
-              <input type="text" class="w-100" required [(ngModel)]="formModel.name">
+              <input type="text" class="w-100" required  [ngModelOptions]="{standalone: true}" [(ngModel)]="formModel.name">
             </div>
           </div>
         </div>
@@ -26,7 +26,7 @@
               <h5 class="mont-regu mt-1">ANA ADI:</h5>
             </div>
             <div class="col pl-0">
-              <input type="text" class="w-100" required [(ngModel)]="formModel.motherName">
+              <input type="text" class="w-100" required  [ngModelOptions]="{standalone: true}" [(ngModel)]="formModel.motherName">
             </div>
           </div>
         </div>
@@ -36,7 +36,7 @@
               <h5 class="mont-regu mt-1">TC KİMLİK NO:</h5>
             </div>
             <div class="col pl-0">
-              <input type="text" class="w-100" required [(ngModel)]="formModel.identityNumber">
+              <input type="text" class="w-100" required  [ngModelOptions]="{standalone: true}" [(ngModel)]="formModel.identityNumber">
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@
               <h5 class="mont-regu mt-1">BABA ADI:</h5>
             </div>
             <div class="col pl-0">
-              <input type="text" class="w-100" required [(ngModel)]="formModel.fatherName">
+              <input type="text" class="w-100" required  [ngModelOptions]="{standalone: true}" [(ngModel)]="formModel.fatherName">
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@
               <h5 class="mont-regu mt-1">SOSYAL MEDYA HESABI:</h5>
             </div>
             <div class="col pl-0">
-              <input type="text" class="w-100" required [(ngModel)]="formModel.socialAccount">
+              <input type="text" class="w-100" required  [ngModelOptions]="{standalone: true}" [(ngModel)]="formModel.socialAccount">
             </div>
           </div>
         </div>
@@ -66,7 +66,7 @@
               <h5 class="mont-regu mt-1">KAN GRUBU:</h5>
             </div>
             <div class="col pl-0">
-              <input type="text" class="w-100" required [(ngModel)]="formModel.bloodGroup">
+              <input type="text" class="w-100" required  [ngModelOptions]="{standalone: true}" [(ngModel)]="formModel.bloodGroup">
             </div>
           </div>
         </div>
@@ -76,7 +76,7 @@
               <h5 class="mont-regu mt-1">CEP TEL NO:</h5>
             </div>
             <div class="col pl-0">
-              <input type="text" class="w-100" required [(ngModel)]="formModel.telNo">
+              <input type="text" class="w-100" required  [ngModelOptions]="{standalone: true}" [(ngModel)]="formModel.telNo">
             </div>
           </div>
         </div>
@@ -86,7 +86,7 @@
               <h5 class="mont-regu mt-1">KİMLİK SERİ NO:</h5>
             </div>
             <div class="col pl-0">
-              <input type="text" class="w-100" required [(ngModel)]="formModel.identitySerialNumber">
+              <input type="text" class="w-100" required  [ngModelOptions]="{standalone: true}" [(ngModel)]="formModel.identitySerialNumber">
             </div>
           </div>
         </div>
@@ -96,7 +96,7 @@
               <h5 class="mont-regu mt-1">MESLEĞİ:</h5>
             </div>
             <div class="col pl-0">
-              <input type="text" class="w-100" required [(ngModel)]="formModel.job">
+              <input type="text" class="w-100" required  [ngModelOptions]="{standalone: true}" [(ngModel)]="formModel.job">
             </div>
           </div>
         </div>
@@ -106,7 +106,7 @@
               <h5 class="mont-regu mt-1">GEÇERLİLİK TARİHİ:</h5>
             </div>
             <div class="col pl-0">
-              <input type="text" class="w-100" required [(ngModel)]="formModel.expireDate">
+              <input type="text" class="w-100" required  [ngModelOptions]="{standalone: true}" [(ngModel)]="formModel.expireDate">
             </div>
           </div>
         </div>
@@ -116,7 +116,7 @@
               <h5 class="mont-regu mt-1">EV ADRESİ:</h5>
             </div>
             <div class="col pl-0">
-              <textarea name="homeAddress" rows="4" class="w-100" required [(ngModel)]="formModel.homeAddress"></textarea>
+              <textarea name="homeAddress" rows="4" class="w-100" required  [ngModelOptions]="{standalone: true}" [(ngModel)]="formModel.homeAddress"></textarea>
             </div>
           </div>
         </div>
@@ -126,7 +126,7 @@
               <h5 class="mont-regu mt-1">İŞ ADRESİ:</h5>
             </div>
             <div class="col pl-0">
-              <textarea name="jobAddress" rows="4" class="w-100" required [(ngModel)]="formModel.jobAddress"></textarea>
+              <textarea name="jobAddress" rows="4" class="w-100" required  [ngModelOptions]="{standalone: true}" [(ngModel)]="formModel.jobAddress"></textarea>
             </div>
           </div>
         </div>
@@ -136,7 +136,7 @@
               <h5 class="mont-regu mt-1">MEZUN OLDUĞU OKUL:</h5>
             </div>
             <div class="col pl-0">
-              <input type="text" class="w-100" required [(ngModel)]="formModel.graduationSchool">
+              <input type="text" class="w-100" required  [ngModelOptions]="{standalone: true}" [(ngModel)]="formModel.graduationSchool">
             </div>
           </div>
         </div>
@@ -146,7 +146,7 @@
               <h5 class="mont-regu mt-1">ÖĞRENİM DURUMU:</h5>
             </div>
             <div class="col pl-0">
-              <input type="text" class="w-100" required required [(ngModel)]="formModel.education">
+              <input type="text" class="w-100" required required  [ngModelOptions]="{standalone: true}" [(ngModel)]="formModel.education">
             </div>
           </div>
         </div>
@@ -161,7 +161,7 @@
                   <h5 class="mont-regu text-center mt-2">İL</h5>
                 </div>
                 <div class="col-12" style="min-height:75px;">
-                  <input type="text" class="w-100" style="height:100%" required required [(ngModel)]="formModel.city">
+                  <input type="text" class="w-100" style="height:100%" required required  [ngModelOptions]="{standalone: true}" [(ngModel)]="formModel.city">
                 </div>
               </div>
             </div>
@@ -171,7 +171,7 @@
                   <h5 class="mont-regu text-center mt-2">İLÇE</h5>
                 </div>
                 <div class="col-12" style="min-height:75px;">
-                  <input type="text" class="w-100" style="height:100%" required [(ngModel)]="formModel.district">
+                  <input type="text" class="w-100" style="height:100%" required  [ngModelOptions]="{standalone: true}" [(ngModel)]="formModel.district">
                 </div>
               </div>
             </div>
@@ -185,7 +185,7 @@
                   <h5 class="mont-regu text-center mt-2">MAH/KÖY</h5>
                 </div>
                 <div class="col-12" style="min-height:75px;">
-                  <input type="text" class="w-100" style="height:100%" required [(ngModel)]="formModel.village">
+                  <input type="text" class="w-100" style="height:100%" required  [ngModelOptions]="{standalone: true}" [(ngModel)]="formModel.village">
                 </div>
               </div>
             </div>
@@ -195,7 +195,7 @@
                   <h5 class="mont-regu text-center mt-2">CİLT NO</h5>
                 </div>
                 <div class="col-12" style="min-height:75px;">
-                  <input type="text" class="w-100" style="height:100%" required [(ngModel)]="formModel.volumeNo">
+                  <input type="text" class="w-100" style="height:100%" required  [ngModelOptions]="{standalone: true}" [(ngModel)]="formModel.volumeNo">
                 </div>
               </div>
             </div>
@@ -205,7 +205,7 @@
                   <h5 class="mont-regu text-center mt-2">AİLE SIRA NO</h5>
                 </div>
                 <div class="col-12" style="min-height:75px;">
-                  <input type="text" class="w-100" style="height:100%" required [(ngModel)]="formModel.familyNo">
+                  <input type="text" class="w-100" style="height:100%" required  [ngModelOptions]="{standalone: true}" [(ngModel)]="formModel.familyNo">
                 </div>
               </div>
             </div>
@@ -215,7 +215,7 @@
                   <h5 class="mont-regu text-center mt-2">SIRA NO</h5>
                 </div>
                 <div class="col-12" style="min-height:75px;">
-                  <input type="text" class="w-100" style="height:100%" required [(ngModel)]="formModel.itemNo">
+                  <input type="text" class="w-100" style="height:100%" required  [ngModelOptions]="{standalone: true}" [(ngModel)]="formModel.itemNo">
                 </div>
               </div>
             </div>

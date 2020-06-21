@@ -29,7 +29,8 @@
               "src/assets/css/waves.css",
               "src/assets/css/bootstrap.min.css",
               "src/assets/css/magnific-popup.css",
-              "src/assets/scss/style.scss"
+              "src/assets/scss/style.scss",
+              "./node_modules/sweetalert2/src/sweetalert2.scss"
             ],
             "scripts": [],
             "es5BrowserSupport": true

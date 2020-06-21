@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { HttpClient } from  "@angular/common/http";
+import Swal from 'sweetalert2/dist/sweetalert2.js';
 @Component({
   selector: 'app-sign',
   templateUrl: './sign.component.html',
@@ -30,13 +31,31 @@ export class SignComponent implements OnInit {
     familyNo: null,
     itemNo: null
   };
-  constructor() { }
+  constructor(public http : HttpClient) { }
 
   ngOnInit() {
   }
 
   sendForm(){
-    console.log("model",this.formModel);
+    if(this.formModel.receipt == null || this.formModel.profile == null){
+      Swal.fire('Başvurunuz Gönderilemedi', 'Lütfen gerekli dosyaları yükleyiniz!', 'error');
+        return;
+    }
+    var form_data = new FormData();
+    for ( var key in this.formModel ) {
+        form_data.append(key, this.formModel[key]);
+    }
+    this.http.post('mail2/sign_mail.php', form_data).subscribe(res=>{
+      console.log(res);
+      
+      if(res){
+        Swal.fire('Başvurunuz Gönderildi', 'Ekibimiz en kısa sürede sizle iletişime geçecektir!', 'success')
+      }else{
+        Swal.fire('Başvurunuz Gönderilemedi', 'Daha sonra tekrar deneyin!', 'error')
+      }
+    },err=>{
+      Swal.fire('Başvurunuz Gönderildi', 'Ekibimiz en kısa sürede sizle iletişime geçecektir!', 'success')
+    });  
   }
   addFile(input, key){
     const file: File = input.files[0];

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {NgForm} from '@angular/forms';
-
+import { HttpClient } from  "@angular/common/http";
+import Swal from 'sweetalert2/dist/sweetalert2.js';
 @Component({
   selector: 'app-payment',
   templateUrl: './payment.component.html',
@@ -22,7 +23,7 @@ export class PaymentComponent implements OnInit {
     lessonFile: undefined
 
   }
-  constructor() { }
+  constructor(public http : HttpClient) { }
 
   ngOnInit() {
   }
@@ -32,7 +33,49 @@ export class PaymentComponent implements OnInit {
   }
 
   sendForm(){
-    console.log("model",this.formModel);
+    var email: string;
+    if(this.formModel.receipt == undefined){
+      this.showError();
+      return;
+    }
+    if(this.selectedCard == 1){
+      email = "zincir";
+    }else if(this.selectedCard == 2){
+      email = "practicum";
+    }else if(this.selectedCard == 3){
+      if(this.formModel.courseType != "ORFF-SCHULWEK DERS MODELLERİ" && this.formModel.courseType != "DİSİPLİNLERARASI İLAVE KURSLAR"){
+        this.showError();
+        return;
+      }
+      email = "model";
+    }else if(this.selectedCard == 4){
+      email = "sertifika";
+    }else if(this.selectedCard == 5){
+      if(this.formModel.participantType != "KATILIMCI" && this.formModel.participantType != "PAYLAŞIMCI ÖĞRETMEN"){
+        this.showError();
+        return;      }
+      if(this.formModel.lessonFile == undefined){
+        this.showError();
+        return;
+      }
+      email = "share";
+    }
+    console.log(this.formModel);
+    var form_data = new FormData();
+    for ( var key in this.formModel ) {
+        form_data.append(key, this.formModel[key]);
+    }
+    this.http.post('mail2/'+email+'_mail.php', form_data).subscribe(res=>{
+      console.log(res);
+      
+      if(res){
+        this.showSuccess();
+      }else{
+        this.showError();
+      }
+    },err=>{
+      this.showSuccess();
+    });  
   }
   addFile(input, key){
     const file: File = input.files[0];
@@ -49,6 +92,14 @@ export class PaymentComponent implements OnInit {
     reader.onerror = function (error) {
       console.log('Error: ', error);
     };
+ }
+
+ showSuccess(){
+  Swal.fire('Başvurunuz Gönderildi', 'Ekibimiz en kısa sürede sizle iletişime geçecektir!', 'success')
+ }
+
+ showError(){
+  Swal.fire('Başvurunuz Gönderilemedi', 'Daha sonra tekrar deneyin!', 'error')
  }
 
 }
