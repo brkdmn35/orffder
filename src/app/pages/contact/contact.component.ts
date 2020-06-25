@@ -11,7 +11,8 @@ export class ContactComponent implements OnInit {
   formModel = {
     name: "",
     email: "",
-    message: ""
+    message: "",
+    telephone: "",
   }
   constructor(public http : HttpClient) { }
 

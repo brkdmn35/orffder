@@ -35,7 +35,7 @@ export class PaymentComponent implements OnInit {
   sendForm(){
     var email: string;
     if(this.formModel.receipt == undefined){
-      this.showError();
+      this.showError('Lütfen gerekli alanları doldurunuz!');
       return;
     }
     if(this.selectedCard == 1){
@@ -44,7 +44,7 @@ export class PaymentComponent implements OnInit {
       email = "practicum";
     }else if(this.selectedCard == 3){
       if(this.formModel.courseType != "ORFF-SCHULWEK DERS MODELLERİ" && this.formModel.courseType != "DİSİPLİNLERARASI İLAVE KURSLAR"){
-        this.showError();
+        this.showError('Lütfen gerekli alanları doldurunuz!');
         return;
       }
       email = "model";
@@ -52,10 +52,10 @@ export class PaymentComponent implements OnInit {
       email = "sertifika";
     }else if(this.selectedCard == 5){
       if(this.formModel.participantType != "KATILIMCI" && this.formModel.participantType != "PAYLAŞIMCI ÖĞRETMEN"){
-        this.showError();
+        this.showError('Lütfen gerekli alanları doldurunuz!');
         return;      }
       if(this.formModel.lessonFile == undefined){
-        this.showError();
+        this.showError('Lütfen gerekli alanları doldurunuz!');
         return;
       }
       email = "share";
@@ -71,7 +71,7 @@ export class PaymentComponent implements OnInit {
       if(res){
         this.showSuccess();
       }else{
-        this.showError();
+        this.showError('Lütfen daha sonra tekrara deneyiniz!');
       }
     },err=>{
       this.showSuccess();
@@ -98,8 +98,8 @@ export class PaymentComponent implements OnInit {
   Swal.fire('Başvurunuz Gönderildi', 'Ekibimiz en kısa sürede sizle iletişime geçecektir!', 'success')
  }
 
- showError(){
-  Swal.fire('Başvurunuz Gönderilemedi', 'Daha sonra tekrar deneyin!', 'error')
+ showError(text){
+  Swal.fire('Başvurunuz Gönderilemedi', text, 'error')
  }
 
 }

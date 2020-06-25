@@ -29,15 +29,15 @@
 .contact-button{
     padding: 5px 30px 5px 30px;
     border-radius: 20px;
-    color: #F08817;
+    color: #fff;
     font-size: 25px;
-    background-color: #5c5c5c;
+    background-color: #F08817;
 }
 
 .contact-button-container{
     position: absolute;
-    right: -4%;
-    top: 88%;
+    right: 0;
+    bottom: -70px;
 }
 
 @media (min-width:1000px){
@@ -48,10 +48,39 @@
     }
 
     .contact-padding{
-        padding-left: 28%;
+        padding-left: 23%;
     }
     .contact-card{
         margin-left: 23%;
 
     }
+}
+
+.payment-sign{
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    float: right;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 500;
+    background-color: #D98017;
+}
+
+.payment-card{
+    background-color: #D98017;
+    border-radius: 50px;
+}
+
+.payment-input{
+    width: 95%;
+    border-radius: 10px;
+    height: 34px;
+}
+
+.payment-button{
+    padding: 5px 30px 5px 30px;
+    border-radius: 20px;
+    color: #F08817;
+    font-size: 25px;
+    background-color: #5c5c5c;
 }

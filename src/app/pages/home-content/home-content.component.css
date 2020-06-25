@@ -20,7 +20,7 @@
         width: 664px;
         margin-top: 21px;
         margin-left: 0;
-        border: 2px solid #F0A017;
+        border: 1px solid #F0A017;
         border-radius: 5px;
     }
 }
@@ -29,14 +29,14 @@
         width: 200px;
         margin-top: 21px;
         margin-left: 0;
-        border: 2px solid #F0A017;
+        border: 1px solid #F0A017;
         border-radius: 5px;
     }
 }
 
 ul li{
     color: #fff;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .ul-group{

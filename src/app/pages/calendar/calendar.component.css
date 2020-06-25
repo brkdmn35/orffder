@@ -7,7 +7,7 @@
     width: 200px;
     margin-top: 21px;
     margin-left: 0;
-    border: 2px solid #F0A017;
+    border: 2px solid #F18918;
     border-radius: 5px;
 }
 
@@ -17,7 +17,7 @@
     height: 520px;
     border-width: 3px 0 3px 0;
     border-style: solid;
-    border-color: #F0A017;
+    border-color: #F18918;
 }
 
 .block-between::before {
@@ -25,14 +25,14 @@
     position: absolute;
     width: 3px;
     height: 514px;
-    background: #F0A017;
+    background: #F18918;
     left: 6px;
 }
 
 .calendar-circle{
     height: 15px;
     width: 15px;
-    background-color: #F0A017;
+    background-color: #F18918;
     border-radius: 50px;
     display: inline-block;
 }

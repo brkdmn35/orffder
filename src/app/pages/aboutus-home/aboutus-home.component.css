@@ -13,9 +13,9 @@
 }
 .hr{
     width: 185px;
-    margin-top: 21px;
+    margin-top: 0px;
     margin-left: 0;
-    border: 2px solid #F0A017;
+    border: 1.5px solid #F18918;
     border-radius: 5px;
 }
 
@@ -30,7 +30,7 @@
     float: right;
     color: #fff;
     font-size: 25px;
-    background-color: #F08817;
+    background-color: #F18918;
 }
 #about{
     min-height: 1150px;
@@ -47,11 +47,8 @@ ul li{
 }
 
 .features-item-list li:before{
-    background-color: #F08817;
-    left: -10px;
-    top: 9px;
-    width: 20px;
-    height: 20px;
+    background-color: #F18918;
+    top: 15px;
 }
 
 .overlay-fix{

@@ -12,11 +12,11 @@ ul li a{
 .home-button{
     background-color: #fff !important;
     border-color: #fff !important;
-    color: rgb(240, 157, 29) !important;
+    color: #F18918 !important;
 }
 .contact-button{
-    background-color: #F0A017 !important;
-    border-color: #F0A017 !important;
+    background-color: #F18918 !important;
+    border-color: #F18918 !important;
     color: #fff !important;
 }
 .mobile-header{
@@ -26,4 +26,16 @@ ul li a{
 .kelson{
     font-family: RalewayBold;
     font-weight: bold;
+}
+
+#header-logo{
+    width: 315px;
+}
+.header-container{
+    padding-left: 5%;
+    padding-top: 20px;
+}
+
+.login-container{
+    padding-right: 2rem;
 }

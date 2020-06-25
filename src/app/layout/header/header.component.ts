@@ -70,31 +70,31 @@ export class HeaderComponent implements AfterViewInit, AfterViewChecked {
       document.querySelector('a[data="id_contact"]').setAttribute('style', 'color:'+color+'!important');
       if(this.router.url == "/index1" || this.router.url == "/" )
       {
-        document.querySelector('a[data="id_home"]').setAttribute('style', 'color:#ee6352 !important');  
+        document.querySelector('a[data="id_home"]').setAttribute('style', 'color:#F18918 !important');  
       }
       else if(this.router.url == "/contact")
       {
-        document.querySelector('a[data="id_contact"]').setAttribute('style', 'color:#ee6352 !important');  
+        document.querySelector('a[data="id_contact"]').setAttribute('style', 'color:#F18918 !important');  
       }
       else if(this.router.url == "/education")
       {
-        document.querySelector('a[data="id_education"]').setAttribute('style', 'color:#ee6352 !important');  
+        document.querySelector('a[data="id_education"]').setAttribute('style', 'color:#F18918 !important');  
       }
       else if(this.router.url == "/about")
       {
-        document.querySelector('a[data="id_about"]').setAttribute('style', 'color:#ee6352 !important');  
+        document.querySelector('a[data="id_about"]').setAttribute('style', 'color:#F18918 !important');  
       }
       else if(this.router.url == "/membership" || this.router.url == "/sign")
       {
-        document.querySelector('a[data="id_membership"]').setAttribute('style', 'color:#ee6352 !important');  
+        document.querySelector('a[data="id_membership"]').setAttribute('style', 'color:#F18918 !important');  
       }
       else if(this.router.url == "/calendar")
       {
-        document.querySelector('a[data="id_calendar"]').setAttribute('style', 'color:#ee6352 !important');  
+        document.querySelector('a[data="id_calendar"]').setAttribute('style', 'color:#F18918 !important');  
       }
       else if(this.router.url == "/magazine")
       {
-        document.querySelector('a[data="id_magazine"]').setAttribute('style', 'color:#ee6352 !important');  
+        document.querySelector('a[data="id_magazine"]').setAttribute('style', 'color:#F18918 !important');  
       }
   }
   isBlack(){

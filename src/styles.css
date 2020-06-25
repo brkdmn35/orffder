@@ -46,6 +46,10 @@
     font-family: MagallanesBold;
 }
 
+.maga-light{
+    font-family: MagallanesLight;
+}
+
 .mont-regu{
     font-family: MontserratRegular;
 }
@@ -58,5 +62,5 @@
     font-family: KelsonSansBold;
 }
 .theme-color{
-    color: #F0A017;
+    color: #F18918;
 }

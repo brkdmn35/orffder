@@ -5,7 +5,7 @@
 
 .hr{
     margin-left: 0;
-    border: 2px solid #F0A017;
+    border: 2px solid #F18918;
     border-radius: 5px;
 }
 
@@ -14,21 +14,25 @@
     padding-bottom: 15px;
     border: 1px solid;
     border-bottom: 0;
-    border-color: #F0A017;
+    border-color: #F18918;
 }
 
-.container-right{
-    border-left: 0 !important;
-}
+
 
 .bottom-border{
     border-bottom: 1px solid;
-    border-color: #F0A017;
+    border-color: #F18918;
 }
+@media (min-width:991px){
+    .container-right{
+        border-left: 0 !important;
+    }
+}
+
 
 .right-border{
     border-right: 1px solid;
-    border-color: #F0A017;
+    border-color: #F18918;
 }
 
 
@@ -62,7 +66,7 @@ textarea{
     background:
       linear-gradient(#fff,#fff),
       linear-gradient(#fff,#fff),
-      #D98017;
+      #F18918;
     background-position:center;
     background-size: 65% 3px,3px 65%;
     background-repeat:no-repeat;
@@ -73,13 +77,14 @@ input[type="file"] {
 }
 
 .send-button{
-    padding: 10px 30px 10px 30px;
-    border-radius: 30px;
+    font-family: KelsonSansBold;
+    padding: 8px 40px 8px 40px;
+    border-radius: 26px;
+    color: #fff;
+    font-size: 21px;
     float: right;
     color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    background-color: #D98017;
+    background-color: #F18918;
 }
 
 .sign-button{
@@ -87,7 +92,7 @@ input[type="file"] {
     border-radius: 50px;
     color: #fff;
     font-size: 25px;
-    background-color: #F08817;
+    background-color: #F18918;
 }
 
 @media (min-width:991px){

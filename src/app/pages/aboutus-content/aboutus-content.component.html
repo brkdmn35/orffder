@@ -2,131 +2,109 @@
   <div class="about-container">
     <div class="row  justify-content-center mt-3">
       <div class="col-auto">
-        <h2>YÖNETİM KURULU ÜYELERİ</h2>
-        <hr class="hr">
+        <h3 class="maga-bold">YÖNETİM KURULU ÜYELERİ</h3>
+        <hr class="hr w-100">
       </div>
     </div>
     <div class="row mt-4">
       <div class="d-none d-lg-block col-lg-1"></div>
       <div class="col-lg-5 card-container card-left">
         <img src="/assets/profil/arsevi.png" alt="img" style="width:197px;">
-        <h4 class="mt-2 title">YÖNETİM KURULU BAŞKANI</h4>
-        <h3>Arsevi KUŞKAN</h3>
+        <h4 class="mt-2 title maga-light">YÖNETİM KURULU BAŞKANI</h4>
+        <h3 class="maga-bold">Arsevi KUŞKAN</h3>
         <hr class="hr2">
-        <h4 class="description mt-3">
-          Ankara Anadolu Güzel Sanatlar Lisesi’nden mezun
-          olduktan sonra Gazi Üniversitesi Müzik Eğitimi Anabilim
-          Dalı’nda öğrenimine devam etti. Üniversite öğrenimi devam ederken Liz Teyze’nin mirasını yaşatan LERA’da birçok
-           uzun ve kısa süreli Orff-Schulwerk ve Drama
-          kursuna katıldı. 2004 yılında Üniversiteden mezun
-          olmasının ardından Hacettepe Üniversitesi Eğitim
-          Fakültesi Okul Öncesi Eğitimi Bölümü’nde tezsiz yüksek lisans statüsünde özel 
-          öğrenci olarak okudu. 2005 yılında Ankara’da çeşitli okul öncesi eğitim kurumlarında 
-          müzik öğretmenliğine başladı. 2008-2009 yılları arasında The Special Course: Advanced Studies In Music And Dance 
+        <h4 class="description mt-3 monte-regu">
+          {{getComment(comments[0])}}
         </h4>
         <div class="row mt-3">
           <div class="col-12">
-            <p class="float-right theme-color detail-button">+Devamı</p>
+            <p class="float-right theme-color detail-button" (click)="comments[0].show = !comments[0].show" [innerText]="comments[0].show ? '-Gizle' : '+Devamı'"></p>
           </div>
         </div>
       </div>
       <div class="col-lg-5 card-container card-right">
         <img src="/assets/profil/derya.png" alt="img" style="width:197px;">
-        <h4 class="mt-2 title">YÖNETİM KURULU BAŞKAN YARDIMCISI</h4>
-        <h3>E. Derya ŞAHÖZKAN</h3>
+        <h4 class="mt-2 title maga-light">YÖNETİM KURULU BAŞKAN YARDIMCISI</h4>
+        <h3 class="maga-bold">E. Derya ŞAHÖZKAN</h3>
         <hr class="hr2">
-        <h4 class="description mt-3">
-          1992 yılında İstanbul Teknik Üniversitesi Türk Müziği Devlet Konservatuarından mezun oldu.
-           Aynı üniversitede 1992-1994 yılları arasında aynı üniversitede sosyal bilimler enstitüsünde
-            yüksek lisansını tamamladı. Marmara Üniversitesi İşletme Fakültesi iktisat Bölümü’nde iktisat
-             alanında 2. yüksek lisansını tamamladı. Şu anda aynı konu üzerine Beykent Üniversitesinde 
-             İşletme Yönetimi Bölümü’nde doktora öğrencisidir. Müzik alanının kurumsal işleyiş açısından
-              nasıl başarılı ve etkin var olabileceği üzerine düşünerek, eğitimde verimlilik ve sürdürülebilirlik
-              konuları üzerine çalıştı. Okul Öncesi Dönemde Müzik Eğitimi konulu yüksek lisans tezi sırasında müzik eğitiminin
+        <h4 class="description mt-3 monte-regu">
+          {{getComment(comments[1])}}
         </h4>
         <div class="row mt-3">
           <div class="col-12">
-            <p class="float-right theme-color detail-button">+Devamı</p>
+            <p class="float-right theme-color detail-button" (click)="comments[1].show = !comments[1].show" [innerText]="comments[1].show ? '-Gizle' : '+Devamı'"></p>
           </div>
         </div>
       </div>
       <div class="d-none d-lg-block col-lg-1"></div>
       <div class="col-lg-4  mt-lg-5 card-container">
         <img src="/assets/profil/devrim.png" alt="img" style="width:197px;">
-        <h4 class="mt-2 title">SAYMAN</h4>
-        <h3>DEVRİM ARSLAN</h3>
+        <h4 class="mt-2 title maga-light">SAYMAN</h4>
+        <h3 class="maga-bold">DEVRİM ARSLAN</h3>
         <hr class="hr2">
         <h4 class="description mt-3">
-          1997'de Marmara Üniversitesi Müzik Eğitimi Bölümü’nden mezun oldu. Aynı yıl özel Ahmet Şimşek Koleji'nde müzik öğretmeni olarak çalışmaya başladı. 2013 yılından beri özel eğitim kurumu Türkan Sabancı Görme Engelliler Okulu’nda çalışmaktadır. Bu kurumda yetenekli görme engelli ve çok engelli çocuklar için çalgı eğitim dersleri açtı, bu öğrencilerini güzel sanatlar liselerine ve üniversitelerin müzik eğitimi bölümlerine yerleştirdi. Görme engelli öğrencileri ile TÜBİTAK projelerine katıldı. M.E.B materyal geliştirme projelerinde materyaller tasarladı.
+          {{getComment(comments[2])}}
         </h4>
         <div class="row mt-3">
           <div class="col-12">
-            <p class="float-right theme-color detail-button">+Devamı</p>
+            <p class="float-right theme-color detail-button" (click)="comments[2].show = !comments[2].show" [innerText]="comments[2].show ? '-Gizle' : '+Devamı'"></p>
           </div>
         </div>
       </div>
       <div class="col-lg-4  mt-lg-5 card-container">
         <img src="/assets/profil/gorkem.png" alt="img" style="width:197px;">
-        <h4 class="mt-2 title">SAYMAN</h4>
-        <h3>Görkem YAVUZŞEN</h3>
+        <h4 class="mt-2 title maga-light">SAYMAN</h4>
+        <h3 class="maga-bold">Görkem YAVUZŞEN</h3>
         <hr class="hr2">
         <h4 class="description mt-3">
-          Dokuz Eylül Üniversitesi Buca Eğitim Fakültesi Müzik Öğretmenliğinden mezun olduktan sonra yüksek lisansını Yeditepe Üniversitesi Güzel Sanat Fakültesi’nde Sanat Yönetimi üstünde tamamladı. Birçok sanatsal projede ve proje yönetiminde proje yöneticisi olarak yer aldı.  2011’de Ordu Kumru’da öğretmenlik hayatına başladı. Çalıştığı okulda Orff-Schulwerk uygulamalarına uygun müzik sınıfı kurarak bu alanda çocuklar ile çalışmalarına ağırlık verdi. 2011-2014’de özel eğitim bursuyla The International San Francisco Orff-Schulwerk Certification
+          {{getComment(comments[3])}}
         </h4>
         <div class="row mt-3">
           <div class="col-12">
-            <p class="float-right theme-color detail-button">+Devamı</p>
+            <p class="float-right theme-color detail-button" (click)="comments[3].show = !comments[3].show" [innerText]="comments[3].show ? '-Gizle' : '+Devamı'"></p>
           </div>
         </div>
       </div>
       <div class="col-lg-4  mt-lg-5 card-container">
         <img src="/assets/profil/emine.png" alt="img" style="width:197px;">
-        <h4 class="mt-2 title">ÜYE</h4>
-        <h3>Emine YAPRAK KOTZİAN</h3>
+        <h4 class="mt-2 title maga-light">ÜYE</h4>
+        <h3 class="maga-bold">Emine YAPRAK KOTZİAN</h3>
         <hr class="hr2">
         <h4 class="description mt-3">
-          İstanbul Yıldız Teknik Üniversitesi Sanat ve Tasarım
-          Fakültesi Duysal Tasarım Programı Müzikoloji
-          Bölümü’nden 2005 yılında mezun oldu ve uzun yıllar Nuri Candaş, 
-          Yıldız Dağdelen, Şebnem Ünal ve Remziye Alper gibi önemli hocalardan opera
-           ve şan eğitimi aldı. Salzburg'daki Mozarteum Üniversitesi Orff Enstitüsü'nde 
-           önce bir yıl misafir öğrenci olarak eğitim aldı daha sonra The Special Course:
-            Advanced Studies In Music And Dance Education – Orff- Schulwerk olarak adlandırılan
-             lisansüstü eğitim programını tamamladı ve en son olarak da         
+          {{getComment(comments[4])}}
         </h4>
         <div class="row mt-3">
           <div class="col-12">
-            <p class="float-right theme-color detail-button">+Devamı</p>
+            <p class="float-right theme-color detail-button" (click)="comments[4].show = !comments[4].show" [innerText]="comments[4].show ? '-Gizle' : '+Devamı'"></p>
           </div>
         </div>
       </div>
       <div class="d-none d-lg-block col-lg-1"></div>
       <div class="col-lg-5 mt-lg-5 card-container card-left">
         <img src="/assets/profil/onur.png" alt="img" style="width:197px;">
-        <h4 class="mt-2 title">ÜYE</h4>
-        <h3>Onur EROL</h3>
+        <h4 class="mt-2 title maga-light">ÜYE</h4>
+        <h3 class="maga-bold">Onur EROL</h3>
         <hr class="hr2">
         <h4 class="description mt-3">
-          1998 yılında Marmara Üniversitesi Müzik Eğitimi Bölümü’nden mezun oldu. 2001 yılında Özel Alev Okulları’nda müzik öğretmenliğine başladı. Orff çalgıları ürettiği ve pedagojik çalgı yapım eğitimleri verdiği Kendin Yap Kendin Çal Atölyesi’ni kurdu. Türkiye’nin 30 farklı şehrinde eğitimcilere yönelik birçok uygulamalı seminer verdi.
-Salzburg'daki Mozarteum Üniversitesi Orff Enstitüsü'nde düzenlenen uluslararası yaz kurslarında eğitmenlik yapan Erol; aynı üniversitede 1 yıl süreyle eğitim gördü.  Avusturya Orff Schulwerk Forum ve Orff Geselshaft’ dan
+          {{getComment(comments[5])}}
         </h4>
         <div class="row mt-3">
           <div class="col-12">
-            <p class="float-right theme-color detail-button">+Devamı</p>
+            <p class="float-right theme-color detail-button" (click)="comments[5].show = !comments[5].show" [innerText]="comments[5].show ? '-Gizle' : '+Devamı'"></p>
           </div>
         </div>
       </div>
       <div class="col-lg-5 mt-lg-5 card-container card-right">
         <img src="/assets/profil/ezo.png" alt="img" style="width:197px;">
-        <h4 class="mt-2 title">ÜYE</h4>
-        <h3>Ezo SUNAL</h3>
+        <h4 class="mt-2 title maga-light">ÜYE</h4>
+        <h3 class="maga-bold">Ezo SUNAL</h3>
         <hr class="hr2">
         <h4 class="description mt-3">
-          2005-2006 eğitim yılında Londra University of Surrey Roehampton Film Studies ve Early Childhood Studies bölümlerinden mezun oldu. 2005 yaz döneminde Salzburg Mozarteum Üniversitesi’nde Orff-Schulwerk eğitimine katıldı. Ocak 2007 de Ezo Sunal Çocuk Atölyesi’ni kurdu. 2008 yaz döneminde Asociacion Orff-España tarafından düzenlenen MÚSICA Y DANZA EN LA EDUCACIÓN başlığındaki uluslararası yaz kursuna katıldı. 2010-2013 yılları arasında Her Beden Duyar projesi kapsamında, Anadolu Üniversitesi Engelli Entegre Yüksek Okulu’ndan işitme 
+          {{getComment(comments[6])}}
         </h4>
         <div class="row mt-3">
           <div class="col-12">
-            <p class="float-right theme-color detail-button">+Devamı</p>
+            <p class="float-right theme-color detail-button" (click)="comments[6].show = !comments[6].show" [innerText]="comments[6].show ? '-Gizle' : '+Devamı'"></p>
           </div>
         </div>
       </div>
@@ -134,74 +112,94 @@ Salzburg'daki Mozarteum Üniversitesi Orff Enstitüsü'nde düzenlenen uluslarar
   </div>
   <div class="row mt-5" style="padding-left: 6%;padding-right: 6%;">
     <div class="col-lg-4 mt-3 pr-lg-5 text-center">
-      <h3>YÖNETİM KURULU YEDEK ÜYELERİ</h3>
-      <hr class="hr3">
-      <h4 class="mt-3" style="font-weight: 100;">
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <h3 class="maga-bold">YÖNETİM KURULU YEDEK ÜYELERİ</h3>
+          <hr class="hr3 w-100">
+        </div>
+      </div>
+      <h4 class="mt-3 mont-regu" style="font-weight: 100;">
         DİDEM MUTLU KARŞIYAKALI
       </h4>
-      <h4 class="mt-3" style="font-weight: 100;">
+      <h4 class="mt-3 mont-regu" style="font-weight: 100;">
         SENEM ÖZYOĞURTCU
       </h4>
-      <h4 class="mt-3" style="font-weight: 100;">
+      <h4 class="mt-3 mont-regu" style="font-weight: 100;">
         CEREN EMRE ATEŞ
       </h4>
-      <h4 class="mt-3" style="font-weight: 100;">
+      <h4 class="mt-3 mont-regu" style="font-weight: 100;">
         DOÇ.DR. ATİLLA COŞKUN TOKSOY
       </h4>
-      <h4 class="mt-3" style="font-weight: 100;">
+      <h4 class="mt-3 mont-regu" style="font-weight: 100;">
         PROF. DR. ALİ ÖZTÜRK
       </h4>
     </div>
     <div class="col-lg-4 mt-3 pl-lg-5 pr-lg-5 text-center">
-      <h3>DENETİM KURULU ASIL ÜYELERİ</h3>
-      <hr class="hr3">
-      <h4 class="mt-3" style="font-weight: 100;">
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <h3 class="maga-bold">DENETİM KURULU ASIL ÜYELERİ</h3>
+          <hr class="hr3 w-100">
+        </div>
+      </div>
+      <h4 class="mt-3 mont-regu" style="font-weight: 100;">
         PINAR AKÇA
       </h4>
-      <h4 class="mt-3" style="font-weight: 100;">
+      <h4 class="mt-3 mont-regu" style="font-weight: 100;">
         ÖMER ÖZTÜYEN
       </h4>
-      <h4 class="mt-3" style="font-weight: 100;">
+      <h4 class="mt-3 mont-regu" style="font-weight: 100;">
         ÖZLEM ÇELİK AYGÜL
       </h4>
     </div>
     <div class="col-lg-4 mt-3 pl-lg-5 text-center">
-      <h3>DENETİM KURULU YEDEK ÜYELERİ</h3>
-      <hr class="hr3">
-      <h4 class="mt-3" style="font-weight: 100;">
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <h3 class="maga-bold">DENETİM KURULU YEDEK ÜYELERİ</h3>
+          <hr class="hr3 w-100">
+        </div>
+      </div>
+      <h4 class="mt-3 mont-regu" style="font-weight: 100;">
         MURAT AKAR
       </h4>
-      <h4 class="mt-3" style="font-weight: 100;">
+      <h4 class="mt-3 mont-regu" style="font-weight: 100;">
         YAREN GÜLŞEN KENAR
       </h4>
-      <h4 class="mt-3" style="font-weight: 100;">
+      <h4 class="mt-3 mont-regu" style="font-weight: 100;">
         ARKIN BÜYÜKDUYKULAR
       </h4>
     </div>
     <div class="d-none d-lg-block col-lg-2"></div>
     <div class="col-lg-4 mt-4 card-container card-left">
-      <h3>DİSİPLİN KURULU ASIL ÜYELERİ</h3>
-      <hr class="hr3">
-      <h4 class="mt-3" style="font-weight: 100;">
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <h3 class="maga-bold">DİSİPLİN KURULU ASIL ÜYELERİ</h3>
+          <hr class="hr3 w-100">
+        </div>
+      </div>
+      <h4 class="mt-3 mont-regu" style="font-weight: 100;">
         ZEYNEP MELİS MİLLİ
       </h4>
-      <h4 class="mt-3" style="font-weight: 100;">
+      <h4 class="mt-3 mont-regu" style="font-weight: 100;">
         DENİZ GÖMEÇ
       </h4>
-      <h4 class="mt-3" style="font-weight: 100;">
+      <h4 class="mt-3 mont-regu" style="font-weight: 100;">
         SUNA TURGUT AKYOL
       </h4>
     </div>
     <div class="col-lg-4 mt-4 card-container card-right">
-      <h3>DİSİPLİN KURULU YEDEK ÜYELERİ</h3>
-      <hr class="hr3">
-      <h4 class="mt-3" style="font-weight: 100;">
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <h3 class="maga-bold">DİSİPLİN KURULU YEDEK ÜYELERİ</h3>
+          <hr class="hr3 w-100">
+        </div>
+      </div>
+      <h4 class="mt-3 mont-regu" style="font-weight: 100;">
         MELTEM NURKAN ACUNER
       </h4>
-      <h4 class="mt-3" style="font-weight: 100;">
+      <h4 class="mt-3 mont-regu" style="font-weight: 100;">
         SEZEN ŞEN
       </h4>
-      <h4 class="mt-3" style="font-weight: 100;">
+      <h4 class="mt-3 mont-regu" style="font-weight: 100;">
         BURAK CEM ŞAHÖZKAN
       </h4>
     </div>

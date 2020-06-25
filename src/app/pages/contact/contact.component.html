@@ -1,20 +1,20 @@
 <section class="section " id="contact">
     <div class="container-fluid" style="padding-left: 10%;padding-right: 10%;">
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-lg-4">
                 <div>
-                    <div class="row">
-                        <div class="col-12">
-                            <h3>İLETİŞİM</h3>
-                            <hr class="contact-hr">
+                    <div class="row mb-5">
+                        <div class="col-auto">
+                            <h3 class="maga-bold mb-0">İLETİŞİM</h3>
+                            <hr class="contact-hr mt-1 w-100">
                         </div>
-                        <div class="col-12" style="margin-top: 70px;">
+                        <div class="col-12" style="margin-top: 45px;">
                             <div class="row">
                                 <div class="col-2">
                                     <img src="/assets/images/contact/mail.PNG" alt="" style="width: 45px;">
                                 </div>
-                                <div class="col-10">
-                                    <span style="font-size: 25px;">info@orffder.org</span>
+                                <div class="col-10 pl-0">
+                                    <span style="font-size: 22px;">info@orffder.org</span>
                                 </div>
                             </div>
                         </div>
@@ -23,8 +23,8 @@
                                 <div class="col-2">
                                     <img src="/assets/images/contact/member.PNG" alt="" style="width: 45px;">
                                 </div>
-                                <div class="col-10">
-                                    <span style="font-size: 25px;">üyelik@orffder.org</span>
+                                <div class="col-10 pl-0">
+                                    <span style="font-size: 22px;">uyelik@orffder.org</span>
                                 </div>
                             </div>
                         </div>
@@ -33,8 +33,8 @@
                                 <div class="col-2">
                                     <img src="/assets/images/contact/location.PNG" alt="" style="width: 45px;">
                                 </div>
-                                <div class="col-10">
-                                    <span style="font-size: 25px;">Adres: Osmanağa Mh. Nusherefendi Sk. Tekiner İşhanı No: 3 Daire: 14 Kadıköy, İstanbul - TURKEY</span>
+                                <div class="col-10 pl-0">
+                                    <span style="font-size: 22px;">Adres: Osmanağa Mh. Nusherefendi Sk. Tekiner İşhanı No: 3 Daire: 14 Kadıköy, İstanbul - TURKEY</span>
                                 </div>
                             </div>
                         </div>
@@ -43,8 +43,8 @@
                                 <div class="col-2">
                                     <img src="/assets/images/contact/insta.PNG" alt="" style="width: 45px;">
                                 </div>
-                                <div class="col-10">
-                                    <span style="font-size: 25px;">instagram: orffder</span>
+                                <div class="col-10 pl-0">
+                                    <span style="font-size: 22px;">instagram: orffder</span>
                                 </div>
                             </div>
                         </div>
@@ -53,8 +53,8 @@
                                 <div class="col-2">
                                     <img src="/assets/images/contact/face.png" alt="" style="width: 45px;">
                                 </div>
-                                <div class="col-10">
-                                    <span style="font-size: 25px;">facebook: orffder </span>
+                                <div class="col-10 pl-0">
+                                    <span style="font-size: 22px;">facebook: orffder </span>
                                 </div>
                             </div>
                         </div>
@@ -62,55 +62,99 @@
     
                 </div>
             </div>
+            
             <div class="col-lg-8">
                 <div>
                     <form #f="ngForm" (ngSubmit)="sendForm()" ngNativeValidate>
 
                         <div class="row">
                             <div class="col-12 contact-padding">
-                                <h3>BİZE MESAJINIZ MI VAR?</h3>
-                                <hr class="message-hr">
-                                <br>
-                                <h6 style="font-weight: 100;font-size: 17px;">Tüm sorularınız ve geri bildirimleriniz için bize mesaj gönderin.</h6>
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <h3 class="maga-bold mb-0">BİZE MESAJINIZ MI VAR?</h3>
+                                        <hr class="message-hr w-100 mt-1">
+                                        <br>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-10 contact-card mt-4">
+                            <div class="col-12 contact-padding">
+                                <h6 style="font-weight: 100;font-size: 17px;">Tüm sorularınız ve geri bildirimleriniz için bize mesaj gönderin.</h6>
+
+                            </div>
+                            <div class="col-8 contact-card mt-4">
                                     <div class="row py-4">
                                         <div class="col-3">
-                                            <h4 class="text-white mt-1 ml-4">İSİM SOYİSİM</h4>
+                                            <h4 class="text-white mt-1 ml-4 mont-semi">İSİM SOYİSİM</h4>
                                         </div>
-                                        <div class="col-7">
-                                            <span class="text-white mr-2"> : </span>
-                                            <input class="contact-input" [(ngModel)]="formModel.name" name="name" type="text" required>
+                                        <div class="col">
+                                            <div class="row">
+                                                <div class="col-auto">
+                                                    <span class="text-white"> : </span>
+                                                </div>
+                                                <div class="col">
+                                                    <input class="contact-input" [(ngModel)]="formModel.name" name="name" type="text" required>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
             
                                     <div class="row py-2">
                                         <div class="col-3">
-                                            <h4 class="text-white mt-1 ml-4">E-MAIL</h4>
+                                            <h4 class="text-white mt-1 ml-4 mont-semi">E-MAIL</h4>
                                         </div>
-                                        <div class="col-7">
-                                            <span class="text-white mr-2"> : </span>
-                                            <input class="contact-input" [(ngModel)]="formModel.email" name="email" type="text" required>
+                                        <div class="col">
+                                            <div class="row">
+                                                <div class="col-auto">
+                                                    <span class="text-white"> : </span>
+                                                </div>
+                                                <div class="col">
+                                                    <input class="contact-input" [(ngModel)]="formModel.email" name="email" type="text" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row py-3">
+                                        <div class="col-3">
+                                            <h4 class="text-white mt-1 ml-4 mont-semi">TELEFON</h4>
+                                        </div>
+                                        <div class="col">
+                                            <div class="row">
+                                                <div class="col-auto">
+                                                    <span class="text-white"> : </span>
+                                                </div>
+                                                <div class="col">
+                                                    <input class="contact-input" [(ngModel)]="formModel.telephone" name="email" type="text" required>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
             
+            
                                     <div class="row py-4">
                                         <div class="col-3">
-                                            <h4 class="text-white mt-1 ml-4">MESAJINIZ</h4>
+                                            <h4 class="text-white mt-1 ml-4 mont-semi">MESAJINIZ</h4>
                                         </div>
-                                        <div class="col-9">
-                                            <span class="text-white float-left" style="margin-right: 12px;"> : </span>
-                                            <textarea style="width: 95%; border-radius: 10px;" [(ngModel)]="formModel.message" type="text" name="message" required rows="4"> </textarea>
+                                        <div class="col">
+                                            <div class="row">
+                                                <div class="col-auto">
+                                                    <span class="text-white"> : </span>
+                                                </div>
+                                                <div class="col">
+                                                    <textarea style="width: 95%; border-radius: 10px;" [(ngModel)]="formModel.message" type="text" name="message" required rows="4"> </textarea>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
         
+                                    <div class="row contact-button-container">
+                                        <div class="col-12">
+                                            <button class="btn contact-button kelso-sans">GÖNDER</button>
+                                        </div>
+                                    </div>
                             </div>
         
-                            <div class="row contact-button-container">
-                                <div class="col-12">
-                                    <button class="btn contact-button">GÖNDER</button>
-                                </div>
-                            </div>
+
 
                         </div>
                     </form>

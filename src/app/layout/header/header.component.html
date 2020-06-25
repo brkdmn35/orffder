@@ -1,42 +1,38 @@
 <nav class="navbar navbar-expand-lg navbar-custom sticky sticky-dark"  style="background-color: transparent;box-shadow: none;background: transparent !important;">
-    <div class="container-fluid">
+    <div class="container-fluid header-container">
         <!-- LOGO -->
         <a class="navbar-brand logo text-uppercase" routerLink="/">
             <img class="d-none d-lg-block d-xl-block" id="header-logo" [src]="isBlack() ? '/assets/images/white-logo.png' : '/assets/images/logo.png'" >
         </a>
 
         <div class="row mr-lg-5" id="header">
-            <div class="col-12">
+            <div class="col-12 mb-3 mt-2 login-container">
                 <div class="nav-button ml-auto">
                     <button class="navbar-toggler float-right" (click)="toggleMenu()" 
                     type="button" id="menu_button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="mdi mdi-menu" style="color: black;"></i>
                     </button>
-                    <!-- <span style="
-                    height: 27px;
-                    width: 25px;
-                    float: right;
-                    border-radius: 50%;
-                    display: inline-block;
-                    background-size: cover;
-                    margin-left: 10px;
-                    margin-top: 2px;
-                    background-image: url('/assets/images/en.png');
-                    "></span>
                     <span style="
                     height: 27px;
                     width: 25px;
                     float: right;
-                    border-radius: 50%;
-                    display: inline-block;
-                    background-size: cover;
-                    margin-top: 2px;
-                    background-image: url('/assets/images/tr.png');
-                    "></span>
-                    <button style="padding: 0px 10px 0px 5px;margin-right: 15px;font-weight: 500;" type="button" [class]="(currentUrl == '' || currentUrl == '/') ? 'btn btn-custom navbar-btn btn-rounded waves-effect waves-light float-right home-button' : 'btn btn-custom navbar-btn btn-rounded waves-effect waves-light float-right contact-button'"> <i style="color: #000000;" class="mdi mdi-account-circle"></i> Üye Girişi</button> -->
+                    margin-left: 10px;
+                    margin-top: 5px;
+                    " class="mont-regu">EN</span>
+                    <span style="
+                    height: 27px;
+                    width: 25px;
+                    float: right;
+                    margin-top: 5px;
+                    " class="mont-regu">TR</span>
+                    <button style="padding: 0px 10px 0px 5px;margin-right: 15px;font-weight: 500;"
+                     type="button" [class]="(currentUrl == '' || currentUrl == '/') ? 'btn btn-custom navbar-btn btn-rounded waves-effect waves-light float-right home-button kelso-sans' : 
+                     'btn btn-custom navbar-btn btn-rounded waves-effect waves-light float-right contact-button kelso-sans'"> 
+                     <i style="color: #000000;" class="mdi mdi-account-circle"></i> ÜYE GİRİŞİ
+                    </button>
                 </div>
             </div>  
-            <div class="col-12 mt-3">
+            <div class="col-12 mt-4">
                 <div class="collapse navbar-collapse" id="navbarCollapse" scrollSpy>
                     <ul class="navbar-nav ml-auto" id="mySidenav">
                         <li class="nav-item">
@@ -78,10 +74,10 @@
                                 <a data="id_home"  [ngx-scroll-to]="'#header'" routerLink="/" class="nav-link">Anasayfa</a>
                             </li>
                             <li class="nav-item">
-                                <a data="id_features"  [ngx-scroll-to]="'#features'" class="nav-link">Hakkımızda</a>
+                                <a data="id_features"  [ngx-scroll-to]="'#features'" routerLink="/about" class="nav-link">Hakkımızda</a>
                             </li>
                             <li class="nav-item">
-                                <a data="id_services"  [ngx-scroll-to]="'#services'" class="nav-link">Eğitim Programları</a>
+                                <a data="id_services"  [ngx-scroll-to]="'#services'" routerLink="/education" class="nav-link">Eğitim Programları</a>
                             </li>
                             <li class="nav-item">
                                 <a data="id_calendar" [ngx-scroll-to]="'#calendar'" routerLink="/calendar"  class="nav-link">Etkinlik Takvimi</a>
