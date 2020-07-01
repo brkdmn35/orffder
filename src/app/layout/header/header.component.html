@@ -6,7 +6,7 @@
         </a>
 
         <div class="row mr-lg-5" id="header">
-            <div class="col-12 mb-3 mt-2 login-container">
+            <div class="col-12 mb-3 login-container">
                 <div class="nav-button ml-auto">
                     <button class="navbar-toggler float-right" (click)="toggleMenu()" 
                     type="button" id="menu_button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,36 +25,36 @@
                     float: right;
                     margin-top: 5px;
                     " class="mont-regu">TR</span>
-                    <button style="padding: 0px 10px 0px 5px;margin-right: 15px;font-weight: 500;"
+                    <button style="padding: 0px 10px 0px 5px;margin-right: 15px;font-weight: 500;" (click)="openVerticallyCentered(content)"
                      type="button" [class]="(currentUrl == '' || currentUrl == '/') ? 'btn btn-custom navbar-btn btn-rounded waves-effect waves-light float-right home-button kelso-sans' : 
                      'btn btn-custom navbar-btn btn-rounded waves-effect waves-light float-right contact-button kelso-sans'"> 
                      <i style="color: #000000;" class="mdi mdi-account-circle"></i> ÜYE GİRİŞİ
                     </button>
                 </div>
             </div>  
-            <div class="col-12 mt-4">
+            <div class="col-12 mt-2">
                 <div class="collapse navbar-collapse" id="navbarCollapse" scrollSpy>
                     <ul class="navbar-nav ml-auto" id="mySidenav">
                         <li class="nav-item">
-                            <a data="id_home" (click)="toggleMenu()" [ngx-scroll-to]="'#header'" routerLink="/" class="nav-link kelson ">ANASAYFA</a>
+                            <a data="id_home" (click)="toggleMenu()" routerLink="/" class="nav-link kelson ">ANASAYFA</a>
                         </li>
                         <li class="nav-item">
-                            <a data="id_about" (click)="toggleMenu()" [ngx-scroll-to]="'#about'" routerLink="/about" class="nav-link kelson ">HAKKIMIZDA</a>
+                            <a data="id_about" (click)="toggleMenu()" routerLink="/about" class="nav-link kelson ">HAKKIMIZDA</a>
                         </li>
                         <li class="nav-item">
-                            <a data="id_education" (click)="toggleMenu()" [ngx-scroll-to]="'#education'" routerLink="/education" class="nav-link kelson ">EĞİTİM PROGRAMLARI</a>
+                            <a data="id_education" (click)="toggleMenu()" routerLink="/education" class="nav-link kelson ">EĞİTİM PROGRAMLARI</a>
                         </li>
                         <li class="nav-item">
-                            <a data="id_calendar"(click)="toggleMenu()" [ngx-scroll-to]="'#calendar'" routerLink="/calendar" class="nav-link kelson ">ETKİNLİK TAKVİMİ</a>
+                            <a data="id_calendar"(click)="toggleMenu()" routerLink="/calendar" class="nav-link kelson ">ETKİNLİK TAKVİMİ</a>
                         </li>
                         <li class="nav-item">
-                            <a data="id_magazine" (click)="toggleMenu()" [ngx-scroll-to]="'#magazine'" routerLink="/magazine" class="nav-link kelson ">ORFFDERGİ</a>
+                            <a data="id_magazine" (click)="toggleMenu()" routerLink="/magazine" class="nav-link kelson ">ORFFDERGİ</a>
                         </li>
                         <li class="nav-item">
-                            <a data="id_membership" (click)="toggleMenu()" [ngx-scroll-to]="'#membership'" routerLink="/membership" class="nav-link kelson ">ÜYELİKLER</a>
+                            <a data="id_membership" (click)="toggleMenu()" routerLink="/membership" class="nav-link kelson ">ÜYELİKLER</a>
                         </li>
                         <li class="nav-item">
-                            <a data="id_contact" (click)="toggleMenu()" [ngx-scroll-to]="'#contact'" routerLink="/contact" class="nav-link kelson ">İLETİŞİM</a>
+                            <a data="id_contact" (click)="toggleMenu()" routerLink="/contact" class="nav-link kelson ">İLETİŞİM</a>
                         </li>
                     </ul>
                 </div>
@@ -71,25 +71,25 @@
                     <div class="collapse navbar-collapse" id="navbarCollapse2" scrollSpy>
                         <ul class="navbar-nav ml-auto mobile-header" id="mySidenav">
                             <li class="nav-item">
-                                <a data="id_home"  [ngx-scroll-to]="'#header'" routerLink="/" class="nav-link">Anasayfa</a>
+                                <a data="id_home"  routerLink="/" class="nav-link">Anasayfa</a>
                             </li>
                             <li class="nav-item">
-                                <a data="id_features"  [ngx-scroll-to]="'#features'" routerLink="/about" class="nav-link">Hakkımızda</a>
+                                <a data="id_features"  routerLink="/about" class="nav-link">Hakkımızda</a>
                             </li>
                             <li class="nav-item">
-                                <a data="id_services"  [ngx-scroll-to]="'#services'" routerLink="/education" class="nav-link">Eğitim Programları</a>
+                                <a data="id_services"  routerLink="/education" class="nav-link">Eğitim Programları</a>
                             </li>
                             <li class="nav-item">
-                                <a data="id_calendar" [ngx-scroll-to]="'#calendar'" routerLink="/calendar"  class="nav-link">Etkinlik Takvimi</a>
+                                <a data="id_calendar" routerLink="/calendar"  class="nav-link">Etkinlik Takvimi</a>
                             </li>
                             <li class="nav-item">
-                                <a data="id_magazine"  [ngx-scroll-to]="'#magazine'" routerLink="/magazine" class="nav-link">Orffdergi</a>
+                                <a data="id_magazine"  routerLink="/magazine" class="nav-link">Orffdergi</a>
                             </li>
                             <li class="nav-item">
-                                <a data="id_membership"  [ngx-scroll-to]="'#membership'" routerLink="/membership" class="nav-link">Üyelikler</a>
+                                <a data="id_membership"  routerLink="/membership" class="nav-link">Üyelikler</a>
                             </li>
                             <li class="nav-item">
-                                <a data="id_contact" [ngx-scroll-to]="'#contact'" routerLink="/contact" class="nav-link">İletişim</a>
+                                <a data="id_contact" routerLink="/contact" class="nav-link">İletişim</a>
                             </li>
                         </ul>
                     </div>
@@ -98,3 +98,28 @@
         </div>
     </div>
 </nav>
+
+<ng-template #content let-modal>
+    <div class="modal-body">
+      <div class="row justify-content-center">
+          <div class="col-auto">
+            <img class="d-none d-lg-block d-xl-block" src="/assets/single-logo.png" >
+          </div>
+          <div class="col-12">
+              <hr>
+          </div>
+          <div class="col-10 mt-2">
+            <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Kullanıcı Adı" name="name" id='name' required />
+                <label for="name" class="form__label">Kullanıcı Adı</label>
+            </div>
+          </div>
+          <div class="col-10 mt-3">
+            <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Şifre" name="password" id='password' required />
+                <label for="name" class="form__label">Şifre</label>
+            </div>
+          </div>
+      </div>
+    </div>
+  </ng-template>

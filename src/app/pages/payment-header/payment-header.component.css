@@ -22,7 +22,7 @@ ul
 .payment-circle{
     height: 25px;
     width: 25px;
-    background-color: rgba(255, 135, 0, 1);
+    background-color: #F18918;
     border-radius: 50%;
     display: inline-block;
 }
@@ -32,5 +32,5 @@ ul
 }
 
 .active{
-    color: #D98017;
+    color: #F18918;
 }

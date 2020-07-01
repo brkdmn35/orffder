@@ -64,3 +64,8 @@
 .theme-color{
     color: #F18918;
 }
+
+.common-detail-style{
+    font-size: 15px;
+    line-height: 24px;
+}

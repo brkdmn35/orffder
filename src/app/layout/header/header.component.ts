@@ -1,18 +1,19 @@
 import { Component, Injectable, AfterViewInit, AfterViewChecked } from '@angular/core';
 import { ScrollSpyService } from 'ngx-scrollspy';
 import { Router } from '@angular/router';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Injectable()
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.scss']
 })
 
 export class HeaderComponent implements AfterViewInit, AfterViewChecked {
   sections = {};
   currentUrl = "";
-  constructor(private scrollSpyService: ScrollSpyService, private router: Router) { }
+  constructor(private scrollSpyService: ScrollSpyService, private router: Router,private modalService: NgbModal) { }
   
   ngOnInit() {
 
@@ -102,6 +103,10 @@ export class HeaderComponent implements AfterViewInit, AfterViewChecked {
   }
   checkColor(){
     return true;
+  }
+
+  openVerticallyCentered(content) {
+    this.modalService.open(content, { centered: true });
   }
 }
 
