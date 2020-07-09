@@ -1,6 +1,6 @@
 import { Component, Injectable, AfterViewInit, AfterViewChecked } from '@angular/core';
 import { ScrollSpyService } from 'ngx-scrollspy';
-import { Router } from '@angular/router';
+import { Router, ActivationStart, ResolveStart } from '@angular/router';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Injectable()
@@ -34,7 +34,22 @@ export class HeaderComponent implements AfterViewInit, AfterViewChecked {
       }
     }
     this.clearMenu();
-  }
+
+    this.router.events.subscribe((event) => {
+        let currentUrl;
+
+        if(event instanceof ResolveStart) {
+          console.log("event", event);
+          currentUrl = event.url || this.currentUrl;
+        }
+        
+        if(currentUrl){
+          this.currentUrl = currentUrl;
+        }
+        this.clearMenu();
+    });
+
+    }
 
   toggleMenu() {
     document.getElementById('navbarCollapse2').classList.toggle('show');
@@ -99,7 +114,7 @@ export class HeaderComponent implements AfterViewInit, AfterViewChecked {
       }
   }
   isBlack(){
-    return this.currentUrl == '/education' || this.currentUrl == '/about' || this.currentUrl == '/membership';
+    return this.currentUrl == '/education' || this.currentUrl == '/about' || this.currentUrl == '/membership' || this.currentUrl == 'education' || this.currentUrl == 'about' || this.currentUrl == 'membership';
   }
   checkColor(){
     return true;

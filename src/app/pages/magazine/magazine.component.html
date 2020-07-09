@@ -27,11 +27,17 @@
   
           <div class="row mt-5 ">
             <div class="col-12">
-              <p style="font-weight: 100;font-size: 16px;width:300px;" class="mt-4 mont-regu">
-                Orffdergi’yi ücretsiz görüntülemek
-                ve farklı avantajlardan yararlanmak için
-                <button class="btn magazine-button" routerLink="/sign" >ÜYE OL</button>
-              </p>
+              <div class="row">
+                <div class="col-auto">
+                  <p style="font-weight: 100;font-size: 16px;width:300px;" class="mt-4 mont-regu">
+                    Orffdergi’yi ücretsiz görüntülemek
+                    ve farklı avantajlardan yararlanmak için
+                  </p>
+                </div>
+                <div class="col-auto d-flex align-items-center">
+                  <button class="btn magazine-button" routerLink="/sign" >ÜYE OL</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -93,7 +99,7 @@
         </div>
       </div>
       <div class="col-lg-5 pl-lg-5 mt-4">
-        <img src="assets/emptydergi.png" alt="img" class="ml-lg-5" style="width: 300px;">
+        <img src="assets/dergi.jpg" alt="img" class="ml-lg-5" style="width: 300px;">
 
         <h4 *ngIf="step == 1; else infoText" style="font-weight: 100;font-size: 16px;" class="mt-4 mont-regu ml-lg-5"> 
         <span style="background-color: #ffc2d780;

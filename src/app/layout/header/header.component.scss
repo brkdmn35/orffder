@@ -50,13 +50,13 @@ $secondary: #F18918;
   }
   
   .form__field {
-    font-family: inherit;
+    font-family: KelsonSansBold;
     width: 100%;
     border: 0;
     border-bottom: 2px solid gray;
     outline: 0;
     font-size: 1.3rem;
-    color: white;
+    color: black;
     padding: 7px 0;
     background: transparent;
     transition: border-color 0.2s;
@@ -101,3 +101,21 @@ $secondary: #F18918;
   .form__field{
     &:required,&:invalid { box-shadow:none; }
   }
+
+  .login-button {
+    font-family: KelsonSansBold;
+    padding: 8px 30px 8px 30px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 21px;
+    background-color: #F18918;
+}
+
+.forget-button {
+  font-family: KelsonSansBold;
+  padding: 8px 30px 8px 30px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 21px;
+  background-color: #808080;
+}

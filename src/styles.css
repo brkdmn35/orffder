@@ -61,6 +61,11 @@
 .kelso-sans{
     font-family: KelsonSansBold;
 }
+
+.nexa-bold{
+    font-family: Nexa-XBold;
+}
+
 .theme-color{
     color: #F18918;
 }
@@ -68,4 +73,5 @@
 .common-detail-style{
     font-size: 15px;
     line-height: 24px;
+    font-weight: 100;
 }

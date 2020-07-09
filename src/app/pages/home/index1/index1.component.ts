@@ -57,7 +57,6 @@ export class Index1Component implements OnInit {
   
   ngOnInit() {
 
-    document.getElementById('navbar1').classList.add('navbar-white');
  
      window.onscroll = function () { myFunction() };
      var navbar1 = document.getElementById("navbar1");

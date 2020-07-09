@@ -44,11 +44,20 @@
         padding-right: 20%;
 
     }
+    .signature{
+        position: absolute;
+    }
+    
+}
+@media (max-width:991px){
+    .signature{
+        margin-left: 5%;
+    }
 }
 
+
 .signature{
-    position: absolute;
     bottom: 40px;
-    width: 360px;
     left: 5%;
+    width: 360px;
 }

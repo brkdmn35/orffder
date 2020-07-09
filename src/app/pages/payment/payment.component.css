@@ -2,7 +2,7 @@
     width: 230px;
     margin-top: 10px;
     margin-left: 0;
-    border: 2px solid #D98017;
+    border: 2px solid #F18918 ;
     border-radius: 5px;
 }
 .hr2{
@@ -25,11 +25,11 @@
     color: #fff;
     font-size: 19px;
     font-weight: 500;
-    background-color: #D98017;
+    background-color: #F18918 ;
 }
 
 .payment-card{
-    background-color: #D98017;
+    background-color: #F18918 ;
     border-radius: 50px;
 }
 
@@ -42,7 +42,7 @@
 .payment-button{
     padding: 5px 30px 5px 30px;
     border-radius: 20px;
-    color: #F08817;
+    color: #F18918 ;
     font-size: 25px;
     background-color: #5c5c5c;
 }
@@ -54,7 +54,7 @@
 }
 
 .theme-color{
-    color: #D98017;
+    color: #F18918 ;
 }
 
 .custom-file-upload {
@@ -66,7 +66,7 @@
     background:
       linear-gradient(#fff,#fff),
       linear-gradient(#fff,#fff),
-      #D98017;
+      #F18918 ;
     background-position:center;
     background-size: 65% 3px,3px 65%;
     background-repeat:no-repeat;
@@ -98,7 +98,7 @@ input[type="file"] {
     color: #fff;
     font-size: 20px;
     font-weight: 500;
-    background-color: #D98017;
+    background-color: #F18918;
 }
 
 .check-input{
@@ -108,7 +108,7 @@ input[type="file"] {
 
 .email-container{
     padding: 10px 20px;
-    background: #D98017;
+    background: #F18918;
     border-radius: 30px;
     color: #fff;
     font-size: 19px;
