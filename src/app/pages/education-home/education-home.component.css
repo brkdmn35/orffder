@@ -1,5 +1,5 @@
 .bg-image{
-    width:1000px;position: absolute;left: 0;bottom: 0;opacity: 0.4;z-index: -1;
+    width:1000px;position: absolute;left: 0;bottom: 0;z-index: -1;
 }
 
 @media (min-width:991px){

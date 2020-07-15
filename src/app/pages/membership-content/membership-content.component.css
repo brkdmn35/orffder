@@ -34,7 +34,7 @@
     font-family: KelsonSansBold;
     padding: 8px 40px 8px 40px;
     border-radius: 26px;
-    float: right;
+    float: left;
     color: #fff;
     font-size: 21px;
     background-color: #F08817;
@@ -43,15 +43,15 @@
 @media (min-width:991px){
     .membership-button-fix{
         bottom: 0;
-        right: 0;
+        left: 0;
         position: absolute;
     }
     .div-left{
-        padding-right: 5%;
+        padding-right: 10%;
     }
     
     .div-right{
-        padding-left: 5%;
+        padding-left: 7%;
         padding-right: 5%;
     }
 }

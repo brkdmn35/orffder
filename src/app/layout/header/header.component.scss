@@ -84,7 +84,7 @@ $secondary: #F18918;
   .form__field:focus {
     ~ .form__label {
       position: absolute;
-      top: 0;
+      top: -10px;
       display: block;
       transition: 0.2s;
       font-size: 1rem;
@@ -118,4 +118,14 @@ $secondary: #F18918;
   color: #fff;
   font-size: 21px;
   background-color: #808080;
+}
+
+@media (max-width:460px){
+  .login-button{
+    width: 100%;
+  }
+  .forget-button{
+    width: 100%;
+    margin-top: 25px;
+  }
 }

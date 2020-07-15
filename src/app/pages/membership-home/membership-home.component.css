@@ -25,7 +25,7 @@
     width: 197px;
     margin-top: -4px;
     margin-left: 0;
-    border: 2px solid #F0A017;
+    border: 2px solid #F18918;
     border-radius: 5px;
 }
 .hr2{
@@ -43,7 +43,7 @@
 }
 
 .theme-color{
-    color: #F0A017;
+    color: #F18918;
 }
 
 
@@ -55,7 +55,7 @@
     float: right;
     color: #fff;
     font-size: 21px;
-    background-color: #F08817;
+    background-color: #F18918;
 }
 
 @media (min-width:991px){
@@ -64,12 +64,12 @@
         position: absolute;
     }
     .div-left{
-        padding-right: 5%;
+        padding-right: 10% !important;
     }
     
     .div-right{
         padding-right: 5%;
-        padding-left: 5%;
+        padding-left: 7% !important;
     }
 }
 .fix-to-left{
