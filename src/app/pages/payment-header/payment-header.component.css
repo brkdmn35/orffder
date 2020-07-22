@@ -6,7 +6,10 @@ ul
 @media (min-width: 992px)
  {
     .payment-col{
-        max-width: 20% !important;
+        max-width: 18% !important;
+    }
+    .payment-col-lg{
+        max-width: 23% !important;
     }
     .payment-row{
         padding-bottom: 30px;

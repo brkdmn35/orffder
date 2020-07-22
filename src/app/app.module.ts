@@ -12,6 +12,7 @@ import { RegisterComponent } from './register/register.component';
 import { PasswordForgetComponent } from './password-forget/password-forget.component';
 
 import { APIInterceptor } from './config/config.service'
+import { AuthService } from './auth/auth.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { APIInterceptor } from './config/config.service'
     provide: HTTP_INTERCEPTORS,
     useClass: APIInterceptor,
     multi: true,
-  }
+  },
+  AuthService
 ],
   bootstrap: [AppComponent]
 })

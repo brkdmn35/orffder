@@ -32,6 +32,9 @@
         border: 1px solid #F0A017;
         border-radius: 5px;
     }
+    .sub-header{
+        line-height: 33px;
+    }
 }
 
 ul li{

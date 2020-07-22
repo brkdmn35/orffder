@@ -5,7 +5,7 @@
             <img class="d-none d-lg-block d-xl-block" id="header-logo" [src]="isBlack() ? '/assets/images/white-logo.png' : '/assets/images/logo.png'" >
         </a>
 
-        <div class="row mr-lg-5" id="header">
+        <div class="row w-100 mr-lg-5" id="header">
             <div class="col-12 mt-3 login-container">
                 <div class="nav-button ml-auto">
                     <button class="navbar-toggler float-right" (click)="toggleMenu()" 
@@ -25,10 +25,13 @@
                     float: right;
                     margin-top: 5px;
                     " class="mont-regu" [style.color]="isBlack() ? 'white' : 'black'">TR</span>
-                    <button style="padding: 0px 10px 0px 5px;margin-right: 15px;font-weight: 500;" (click)="openVerticallyCentered(content)"
+
+                    <img src="/assets/single-logo.png" class="mobile-logo" alt="logo">
+
+                    <button style="padding: 0px 10px 0px 5px;margin-right: 15px;font-weight: 500;" (click)="openVerticallyCentered(loginModal)"
                      type="button" [class]="(currentUrl == '' || currentUrl == '/') ? 'btn btn-custom navbar-btn btn-rounded waves-effect waves-light float-right home-button kelso-sans' : 
                      'btn btn-custom navbar-btn btn-rounded waves-effect waves-light float-right contact-button kelso-sans'"> 
-                     <i style="color: #000000;" class="mdi mdi-account-circle"></i> ÜYE GİRİŞİ
+                     <i style="color: #000000;" class="mdi mdi-account-circle"></i> {{authService.isLoggedIn ? 'Çıkış Yap' : 'Giriş Yap'}}
                     </button>
                 </div>
             </div>  
@@ -99,7 +102,7 @@
     </div>
 </nav>
 
-<ng-template #content let-modal>
+<ng-template #loginModal let-modal>
     <div class="modal-body">
       <div class="row justify-content-center">
           <div class="col-auto">
@@ -110,20 +113,24 @@
           </div>
           <div class="col-10 mt-2">
             <div class="form__group field">
-                <input type="input" class="form__field" placeholder="Kullanıcı Adı" name="name" id='name' required />
+                <input [(ngModel)]="name" type="input" class="form__field" placeholder="Kullanıcı Adı" name="name" id='name' required />
                 <label for="name" class="form__label">Kullanıcı Adı</label>
             </div>
           </div>
           <div class="col-10 mt-3">
             <div class="form__group field">
-                <input type="input" class="form__field" placeholder="Şifre" name="password" id='password' required />
+                <input [(ngModel)]="password" type="password" class="form__field" placeholder="Şifre" name="password" id='password' required />
                 <label for="name" class="form__label">Şifre</label>
             </div>
           </div>
+          <div *ngIf="error" class="col-12">
+              <p class="text-center mt-3" style="color:red">
+                  {{message}}
+              </p>
+          </div>
           <div class="col-10 mt-4">
-            <button class="btn login-button" (click)="step=2">Giriş Yap</button>
+            <button class="btn login-button" (click)="login()">Giriş Yap</button>
             <button class="btn forget-button float-right" (click)="step=2">Şifremi Sıfırla</button>
-
           </div>
           <div class="col-10 mt-4">
           </div>

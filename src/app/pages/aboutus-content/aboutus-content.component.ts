@@ -34,4 +34,8 @@ export class AboutusContentComponent implements OnInit {
     }
   }
 
+  openTuzuk(){
+    var win = window.open('/assets/pdf/tüzük.pdf', '_blank');
+    win.focus();
+  }
 }

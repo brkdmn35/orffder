@@ -1,7 +1,10 @@
-import { Component, Injectable, AfterViewInit, AfterViewChecked } from '@angular/core';
+import { Component, Injectable, AfterViewInit, AfterViewChecked, ViewChild, TemplateRef } from '@angular/core';
 import { ScrollSpyService } from 'ngx-scrollspy';
 import { Router, ActivationStart, ResolveStart } from '@angular/router';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClient } from '@angular/common/http';
+import { AuthService } from 'src/app/auth/auth.service';
+import { LocalStorageService } from 'angular-2-local-storage';
 
 @Injectable()
 @Component({
@@ -13,7 +16,13 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 export class HeaderComponent implements AfterViewInit, AfterViewChecked {
   sections = {};
   currentUrl = "";
-  constructor(private scrollSpyService: ScrollSpyService, private router: Router,private modalService: NgbModal) { }
+  name: string;
+  password: string;
+  error= false;
+  message= '';
+  
+  constructor(private scrollSpyService: ScrollSpyService, private router: Router,private modalService: NgbModal, public http: HttpClient,
+     public authService: AuthService, public localStorage: LocalStorageService) { }
   
   ngOnInit() {
 
@@ -70,7 +79,6 @@ export class HeaderComponent implements AfterViewInit, AfterViewChecked {
 
   ngAfterViewChecked() {
     this.currentUrl = this.router.url;
-    console.log(this.currentUrl);
     this.clearMenu();
   }
 
@@ -121,8 +129,31 @@ export class HeaderComponent implements AfterViewInit, AfterViewChecked {
   }
 
   openVerticallyCentered(content) {
-    this.modalService.open(content, { centered: true });
+    if(this.authService.isLoggedIn){
+      this.authService.logout();
+    }else{
+      this.modalService.open(content, { centered: true });
+    }
   }
+
+  login(){
+    this.error = false;
+    this.http.get<any>('token/token.php?name='+this.name + '&pass=' + this.password).subscribe(
+      res=>{
+        if(res.status){
+          var user= {name:res.name};
+          this.localStorage.set('token',res.token);
+          this.localStorage.set('user',user)
+          this.authService.setSession(res.token,user);
+          this.modalService.dismissAll();
+        }else{
+          this.error= true;
+          this.message= res.message;
+        }
+      },
+    );   
+  }
+
 }
 
 

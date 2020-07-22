@@ -61,6 +61,16 @@
     .features-box-right{
         padding-left: 8%;
     }  
+
+    .education-image{
+        width:490px;
+    }
+}
+
+@media (max-width:991px){
+    .education-image{
+        width:290px;
+    }
 }
 
 .content-footer-container{

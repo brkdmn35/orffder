@@ -101,17 +101,30 @@
       <div class="col-lg-5 pl-lg-5 mt-4">
         <img src="assets/dergi.jpg" alt="img" class="ml-lg-5" style="width: 300px;">
 
-        <h4 *ngIf="step == 1; else infoText" class="common-detail-style mt-4 mont-regu ml-lg-5"> 
-        <span style="background-color: #ffc2d780;
-          margin-right: 6px;"> 25,00 ₺
-          </span>  (Vergiler Dahil)</h4>
+        <div class="row">
+          <div class="col-auto">
+            <h4 *ngIf="step == 1; else infoText" class="common-detail-style mt-4 mont-regu ml-lg-5"> 
+              <span style="background-color: #ffc2d780;
+                margin-right: 6px;"> 25,00 ₺
+                </span>  (Vergiler Dahil)</h4>
+              <button *ngIf="step == 1" class="btn magazine-button2  ml-lg-5 mt-3" (click)="step=2">SATIN AL</button>
+          </div>
+          <div class="col">
+            <h4 *ngIf="step == 1; else infoText" class="common-detail-style mt-4 mont-regu view-button"> 
+              İlk sayıya özel ücretsiz görüntüle
+            </h4>
+              <button *ngIf="step == 1" class="btn magazine-button2 mt-3 view-button" (click)="openInNewTab()">Görüntüle</button>
+          </div>
+        </div>
+
+
+
         <ng-template #infoText>
           <h4 style="font-weight: 100;font-size: 16px;max-width: 300px;" class="mt-4 mont-regu ml-lg-5"> 
             Orffder üyesi değilseniz ödemenizi
             gerçekleştirdikten sonra Orffdergi size mail olarak iletilecektir.
           </h4>
         </ng-template>
-        <button *ngIf="step == 1" class="btn magazine-button2  ml-lg-5 mt-3" (click)="step=2">SATIN AL</button>
       </div>
     </div>
 </section>

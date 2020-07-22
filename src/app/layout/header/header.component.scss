@@ -129,3 +129,20 @@ $secondary: #F18918;
     margin-top: 25px;
   }
 }
+
+
+
+@media (max-width:991px){
+  .mobile-logo{
+    width: 52px;
+    position: absolute;
+    left: 0;
+    top: -27px;
+  }
+}
+
+@media (min-width:991px){
+  .mobile-logo{
+    display: none;
+  }
+}

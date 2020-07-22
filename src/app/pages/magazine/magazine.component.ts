@@ -49,4 +49,8 @@ export class MagazineComponent implements OnInit {
     };
  }
 
+ openInNewTab(){
+  var win = window.open('/assets/pdf/firstPublish.pdf', '_blank');
+  win.focus();
+ }
 }
