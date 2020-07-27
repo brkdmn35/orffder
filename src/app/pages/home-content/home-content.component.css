@@ -60,3 +60,12 @@ ul li{
 .features-item-list li:before{
     background-color: #F08817;
 }
+
+.fix-to-right{
+    position: absolute;
+    bottom: 22px;
+    right: 55px;
+    font-size: 9px;
+    color: white;
+    z-index: 5;
+}

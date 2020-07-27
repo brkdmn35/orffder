@@ -41,3 +41,11 @@
     min-height: 1150px;
     margin-top: -220px;
 }
+
+.fix-to-left{
+    position: absolute;
+    bottom: 22px;
+    left: 45px;
+    font-size: 9px;
+    color: white;
+}

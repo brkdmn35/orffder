@@ -61,3 +61,11 @@ ul li{
 .middle-img{
     width: 400px;
 }
+
+.fix-to-right{
+    position: absolute;
+    bottom: 22px;
+    right: 55px;
+    font-size: 9px;
+    color: white;
+}

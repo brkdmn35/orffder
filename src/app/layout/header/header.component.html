@@ -26,7 +26,7 @@
                     margin-top: 5px;
                     " class="mont-regu" [style.color]="isBlack() ? 'white' : 'black'">TR</span>
 
-                    <img src="/assets/single-logo.png" class="mobile-logo" alt="logo">
+                    <img [src]="isBlack() ? '/assets/images/white-logo.png' : '/assets/images/logo.png'" class="mobile-logo" alt="logo">
 
                     <button style="padding: 0px 10px 0px 5px;margin-right: 15px;font-weight: 500;" (click)="openVerticallyCentered(loginModal)"
                      type="button" [class]="(currentUrl == '' || currentUrl == '/') ? 'btn btn-custom navbar-btn btn-rounded waves-effect waves-light float-right home-button kelso-sans' : 
@@ -67,11 +67,12 @@
     <div class="row m-0 w-100" 
     style="background-color: #F18918;
     position: absolute;
-    top: 85px;">
+    top: 0px;
+    z-index: -1;">
         <div class="col-12 p-0">
             <div class="row d-lg-none d-xl-none">
                 <div class="col-12 ">
-                    <div class="collapse navbar-collapse" id="navbarCollapse2" scrollSpy>
+                    <div class="mobile-list collapse navbar-collapse" id="navbarCollapse2" scrollSpy>
                         <ul class="navbar-nav ml-auto mobile-header" id="mySidenav">
                             <li class="nav-item">
                                 <a data="id_home"  (click)="toggleMenu()" routerLink="/" class="nav-link">Anasayfa</a>

@@ -134,10 +134,15 @@ $secondary: #F18918;
 
 @media (max-width:991px){
   .mobile-logo{
-    width: 52px;
+    width: 160px;
     position: absolute;
     left: 0;
-    top: -27px;
+    top: -13px;
+  }
+  .navbar-btn{
+    position: absolute;
+    right: 30px;
+    top: -33px;
   }
 }
 
@@ -145,4 +150,8 @@ $secondary: #F18918;
   .mobile-logo{
     display: none;
   }
+}
+
+.mobile-list{
+  padding-top: 90px;
 }

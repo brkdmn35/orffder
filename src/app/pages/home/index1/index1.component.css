@@ -61,6 +61,16 @@
     .signature{
         margin-left: 5%;
     }
+    .left-title{
+        color:  #fff;
+    }
+    .autor{
+        color:  #fff;
+    }
+}
+
+.autor{
+    font-style: italic;
 }
 
 
